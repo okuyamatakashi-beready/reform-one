@@ -43,12 +43,101 @@
 					</div>
 				</div>
 			</div>
-			
+
 		</div>
 
 	</div>
 
 </header>
+
+<div id="gnav">
+	<div class="gnav__container">
+		<div class="nav__content">
+			<ul class="flex">
+				<li>
+					<a href="/concept">
+						<p>コンセプト</p>
+						<span>concept</span>
+					</a>
+				</li>
+				<li>
+					<a href="/works">
+						<p>施工事例</p>
+						<span>works</span>
+					</a>
+				</li>
+				<li>
+					<a href="/reform">
+						<p>リフォーム</p>
+						<span>reform</span>
+					</a>
+				</li>
+				<li>
+					<a href="/renovation">
+						<p>リノベーション</p>
+						<span>renovation</span>
+					</a>
+				</li>
+				<li>
+					<a href="/estate">
+						<p>新築&不動産</p>
+						<span>new construction & real estate</span>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="flex">
+				<li>
+					<a href="/staff">
+						<p>スタッフ</p>
+						<span>staff</span>
+					</a>
+				</li>
+				<li>
+					<a href="/voice">
+						<p>お客様の声</p>
+						<span>voice</span>
+					</a>
+				</li>
+				<li>
+					<a href="/news">
+						<p>お知らせ</p>
+						<span>news</span>
+					</a>
+				</li>
+				<li>
+					<a href="/blog">
+						<p>ブログ</p>
+						<span>blog</span>
+					</a>
+				</li>
+				<li>
+					<a href="/company">
+						<p>会社概要</p>
+						<span>company</span>
+					</a>
+				</li>
+			</ul>
+
+			<div class="nav__wrap--btn">
+				<a href="/contact" class="nav__btn--contact">
+					<span>お問い合わせ</span>
+				</a>
+
+				<div class="flex">
+					<a href="/contact" class="nav__btn--contact nav__btn--small">
+						<span>来場予約</span>
+					</a>
+					<a href="/contact" class="nav__btn--contact nav__btn--small">
+						<span>資料請求</span>
+					</a>
+				</div>
+			</div>
+
+		</div>
+		
+	</div>
+</div>
 
 
 
