@@ -59,10 +59,10 @@ html {
 }
 
 body {
-  font-family: "Hiragino Sans", "Montserrat", Arial, "Hiragino Sans", Meiryo, sans-serif;
+  font-family: "Noto Sans JP", "Roboto", Arial, "Hiragino Sans", Meiryo, sans-serif;
   font-size: 88%;
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 400;
   min-width: 1100px;
   color: #000;
   text-align: justify;

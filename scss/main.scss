@@ -1,4 +1,160 @@
 @use "./config/variables" as v;
 @use "./common" as c;
 
+/*-------------------------
+メインビジュアル
+-------------------------*/
+#mv {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #252014;
+        opacity: 0.2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+    .mv__wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        #videoTop {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+        }
+        .mv__catch {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            text-align: center;
+            z-index: 50;
+            transform: translate(-50%,-50%);
+            img {
+                max-width: 310px;
+                width: 16.14%;
+                margin-bottom: 2.4rem;
+            }
+        }
+        p.catch {
+            font-size: clamp(14px, 1.182rem + 1.09vw, 2rem);
+            letter-spacing: 0.08em;
+            line-height: 1.7;
+            text-align: center;
+            color: #fff;
+            font-weight: 400;
+            @media screen and (max-width: 768px) {
+                font-size: 26px;
+                left: 40px;
+                top: auto;
+                bottom: 10%;
+            }
+        }
+    }
+    .scroll {
+        text-align: center;
+        color: #fff;
+        font-size: clamp(11px, 0.918rem + 0.91vw, 1.6rem);
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 24px;
+        width: 60px;
+        text-align: center;
+        p {
+            margin-bottom: 10px;
+        }
+        @keyframes moveDown {
+            from {
+                top: 0;
+            }
+            to {
+                top: calc(100% - 10px);
+            }
+        }
+        div {
+            position: relative;
+            span {
+                &:nth-of-type(1) {
+                    width: 1px;
+                    display: block;
+                    height: 40px;
+                    background-color: #fff;
+                    margin: auto;
+                }
+                &:nth-of-type(2) {
+                    width: 3px;
+                    position: absolute;
+                    display: block;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    height: 10px;
+                    border-radius: 10px;
+                    background-color: #fff;
+                    margin: auto;
+                    animation: moveDown 1.5s ease-out infinite;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        p.catch {
+            font-size: 30px;
+        }
+    }
+}
+
+
+/*-------------------------
+    コンセプト
+-------------------------*/
+#concept {
+    padding-top: 16rem;
+    padding-bottom: 26rem;
+    .concept__container {
+        width: 500px;
+        margin: auto;
+        & > .flex {
+            align-items: flex-start;
+            justify-content: center;
+        }
+        h2 {
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+            font-size: clamp(14px, 1.182rem + 1.09vw, 2rem);
+            line-height: 1.7;
+            letter-spacing: 0.3em;
+            font-weight: bold;
+            order: 2;
+            margin-left: 5.5rem;
+        }
+        p.concept__text {
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+            order: 1;
+            font-size: clamp(11px, 0.918rem + 0.91vw, 1.6rem);
+            line-height: 2.56em;
+            letter-spacing: 0.04em;
+            span {
+                -webkit-text-combine: horizontal;
+                -ms-text-combine-horizontal: all;
+                text-combine-upright: all;
+            }
+        }
+    }
+}
 
