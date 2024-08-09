@@ -9,8 +9,8 @@
 <div class="works">
     <div class="page__container">
         <h1 class="page__ttl">
-            <p>works</p>
-            <span>施工事例</span>
+            <p>news</p>
+            <span>お知らせ</span>
         </h1>
 
         <ul class="works__cat flex">
@@ -18,16 +18,7 @@
                 <a href="">all</a>
             </li>
             <li>
-                <a href="">リフォーム</a>
-            </li>
-            <li>
-                <a href="">リノベーション</a>
-            </li>
-            <li>
-                <a href="">新築＆不動産</a>
-            </li>
-            <li>
-                <a href="">カテゴリー</a>
+                <a href="">イベント</a>
             </li>
         </ul>
 
@@ -39,7 +30,7 @@
 						'posts_per_page' => '12',
 						'post_status' => 'publish',
 						'paged' => $paged,
-						'post_type' => 'rf-works',
+						'category_name' => 'news',
 					);
 					?>
                     <?php $my_query = new WP_Query( $args ); ?><!-- クエリの指定 -->
@@ -58,7 +49,16 @@
                         <h2>
                             <?php the_title(); ?>
                         </h2>
-                        <ul class="tag"></ul>
+                        <ul class="tag flex">
+                            <?php
+                            $categories = get_the_category();
+                            if ( ! empty( $categories ) ) {
+                                foreach ( $categories as $category ) {
+                                    echo '<li>#' . esc_html( $category->name ) . '</li>';
+                                }
+                            }
+                            ?>
+                        </ul>
                     </a>
                 </li>
 

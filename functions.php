@@ -14,6 +14,13 @@ function my_styles()  {
     if ( is_page('works') ) {
       wp_enqueue_style( 'works_css', get_template_directory_uri() . '/scss/works/index.css');
       }
+    if ( is_page('news') ) {
+      wp_enqueue_style( 'works_css', get_template_directory_uri() . '/scss/works/index.css');
+      wp_enqueue_style( 'news_css', get_template_directory_uri() . '/scss/news/index.css');
+      }
+    if ( is_singular('') ) {
+      wp_enqueue_style( 'single_css', get_template_directory_uri() . '/scss/single/index.css');
+      }
 
 
     }
