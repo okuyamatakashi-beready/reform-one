@@ -389,6 +389,14 @@ gnav
   width: 62.5%;
   margin: auto auto 12rem auto;
 }
+.single__container .single__thumb {
+  width: 100%;
+  padding-top: 56.25%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 6.4rem;
+}
 .single__container .single__ttl .single__time {
   justify-content: flex-start;
   margin-bottom: 12px;
@@ -414,8 +422,24 @@ gnav
   line-height: 1;
   letter-spacing: 0.04em;
 }
+.single__container .single__ttl ul.tag {
+  flex-wrap: wrap;
+  margin-top: 2.4rem;
+}
+.single__container .single__ttl ul.tag li {
+  font-size: clamp(11px, 0.855rem + 0.73vw, 1.4rem);
+  color: #707070;
+  font-weight: bold;
+  width: auto;
+  margin-right: 10px;
+}
 .single__container .single__content {
   margin: 40px 0;
+}
+.single__container .single__content p {
+  font-size: clamp(11px, 0.918rem + 0.91vw, 1.6rem);
+  line-height: 3rem;
+  letter-spacing: 0.04em;
 }
 .single__container .single__img {
   background-position: center center;

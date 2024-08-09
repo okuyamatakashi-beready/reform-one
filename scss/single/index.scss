@@ -5,6 +5,12 @@
     padding-top: 8rem;
     width: 62.5%;
     margin: auto auto 12rem auto;
+    .single__thumb {
+        width: 100%;
+        padding-top: 56.25%;
+        @include v.bg;
+        margin-bottom: 6.4rem;
+    }
     .single__ttl {
         .single__time {
             justify-content: flex-start;
@@ -31,9 +37,25 @@
             line-height: 1;
             letter-spacing: 0.04em;
         }
+        ul.tag {
+            flex-wrap: wrap;
+            margin-top: 2.4rem;
+            li {
+                font-size: clamp(11px, 0.855rem + 0.73vw, 1.4rem);
+                color: #707070;
+                font-weight: bold;
+                width: auto;
+                margin-right: 10px;
+            }
+        }
     }
     .single__content {
         margin: 40px 0;
+        p {
+            font-size: clamp(11px, 0.918rem + 0.91vw, 1.6rem);
+            line-height: 3rem;
+            letter-spacing: 0.04em;
+        }
     }
     .single__img {
         @include v.bg;
