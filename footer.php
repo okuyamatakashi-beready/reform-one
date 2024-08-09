@@ -1,4 +1,62 @@
+<footer id="footer">
+    <div class="container">
+        <div class="flex">
+            <div class="footer__left">
+                <a href="" class="ft__logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/common/ft_logo.svg" alt="" class="">
+                </a>
+                <p>
+                    <strong>リフォームワン株式会社</strong>
+                    <span>〒386-0002  長野県上田市住吉40-13</span>
+                </p>
+                <a href="tel:0120820440" class="flex tel">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/common/phone.svg" alt="" class="">
+                    <span>0120-82-0440</span>
+                </a>
+                <p>
+                    <span>受付時間  09:00-18:00</span>
+                </p>
+            </div>
 
+            <div class="ft__right">
+                <ul class="flex">
+                    <li>
+                        <a href="">コンセプト</a>
+                    </li>
+                    <li>
+                        <a href="">リフォーム</a>
+                    </li>
+                    <li>
+                        <a href="">お知らせ</a>
+                    </li>
+                    <li>
+                        <a href="">施工事例</a>
+                    </li>
+                    <li>
+                        <a href="">リノベーション</a>
+                    </li>
+                    <li>
+                        <a href="">ブログ</a>
+                    </li>
+                    <li>
+                        <a href="">スタッフ</a>
+                    </li>
+                    <li>
+                        <a href="">新築・不動産</a>
+                    </li>
+                    <li>
+                        <a href="">お客様の声</a>
+                    </li>
+                    <li>
+                        <a href="">会社概要</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <small class="copy">© 2024 reforme one Inc.</small>
+</footer>
 
 </body>
 <?php wp_footer();?>

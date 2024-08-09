@@ -1,0 +1,35 @@
+@use "./../config/variables" as v;
+@use "./../common" as c;
+
+.page__mv {
+    position: relative;
+    margin-bottom: 10rem;
+    img {
+        width: 63.47%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    padding-top: 20rem;
+    .mv {
+        width: 81.25%;
+        @include v.bg;
+        margin-left: auto;
+        padding-top: 17%;
+        z-index: 50;
+        position: relative;
+    }
+}
+.page__container {
+    width: 62.5%;
+    margin: auto;
+}
+
+h1.page__ttl {
+    font-size: clamp(56px, 4.727rem + 4.36vw, 8rem);
+    line-height: 1;
+    span {
+        font-size: clamp(1.7rem, 1.445rem + 1.27vw, 2.4rem);
+        line-height: 1;
+    }
+}

@@ -384,361 +384,38 @@ gnav
   font-size: clamp(11px, 0.918rem + 0.91vw, 1.6rem);
 }
 
-/*-------------------------
-メインビジュアル
--------------------------*/
-#mv {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
+.page__mv {
   position: relative;
+  margin-bottom: 10rem;
+  padding-top: 20rem;
 }
-#mv::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #252014;
-  opacity: 0.2;
+.page__mv img {
+  width: 63.47%;
   position: absolute;
   top: 0;
-  left: 0;
-  z-index: 10;
-}
-#mv .mv__wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-#mv .mv__wrapper #videoTop {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-}
-#mv .mv__wrapper .mv__catch {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  text-align: center;
-  z-index: 50;
-  transform: translate(-50%, -50%);
-}
-#mv .mv__wrapper .mv__catch img {
-  max-width: 310px;
-  width: 16.14%;
-  margin-bottom: 2.4rem;
-}
-#mv .mv__wrapper p.catch {
-  font-size: clamp(14px, 1.182rem + 1.09vw, 2rem);
-  letter-spacing: 0.08em;
-  line-height: 1.7;
-  text-align: center;
-  color: #fff;
-  font-weight: 400;
-}
-@media screen and (max-width: 768px) {
-  #mv .mv__wrapper p.catch {
-    font-size: 26px;
-    left: 40px;
-    top: auto;
-    bottom: 10%;
-  }
-}
-#mv .scroll {
-  text-align: center;
-  color: #fff;
-  font-size: clamp(11px, 0.918rem + 0.91vw, 1.6rem);
-  position: absolute;
-  left: 0;
   right: 0;
-  margin: auto;
-  bottom: 24px;
-  width: 60px;
-  text-align: center;
 }
-#mv .scroll p {
-  margin-bottom: 10px;
-}
-@keyframes moveDown {
-  from {
-    top: 0;
-  }
-  to {
-    top: calc(100% - 10px);
-  }
-}
-#mv .scroll div {
-  position: relative;
-}
-#mv .scroll div span:nth-of-type(1) {
-  width: 1px;
-  display: block;
-  height: 40px;
-  background-color: #fff;
-  margin: auto;
-}
-#mv .scroll div span:nth-of-type(2) {
-  width: 3px;
-  position: absolute;
-  display: block;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 10px;
-  border-radius: 10px;
-  background-color: #fff;
-  margin: auto;
-  animation: moveDown 1.5s ease-out infinite;
-}
-@media screen and (max-width: 768px) {
-  #mv p.catch {
-    font-size: 30px;
-  }
-}
-
-/*-------------------------
-    コンセプト
--------------------------*/
-#concept {
-  padding-top: 16rem;
-}
-#concept .concept__container {
-  width: 30%;
-  margin: auto;
-  position: relative;
-}
-#concept .concept__container > .flex {
-  align-items: flex-start;
-  justify-content: center;
-}
-#concept .concept__container h2 {
-  writing-mode: vertical-rl;
-  font-size: clamp(14px, 1.182rem + 1.09vw, 2rem);
-  line-height: 1.7;
-  letter-spacing: 0.3em;
-  font-weight: bold;
-  order: 2;
-  margin-left: 5.5rem;
-}
-#concept .concept__container p.concept__text {
-  writing-mode: vertical-rl;
-  order: 1;
-  font-size: clamp(11px, 0.918rem + 0.91vw, 1.6rem);
-  line-height: 2.56em;
-  letter-spacing: 0.04em;
-}
-#concept .concept__container p.concept__text span {
-  -webkit-text-combine: horizontal;
-  -ms-text-combine-horizontal: all;
-  text-combine-upright: all;
-}
-#concept .concept__container a.common__btn {
-  transform: rotate(90deg);
-  position: absolute;
-  left: -25%;
-  bottom: 20%;
-}
-#concept #megureno {
-  padding-top: 26rem;
-  padding-bottom: 11rem;
-  position: relative;
-}
-#concept #megureno .megu__container {
-  width: 70.8%;
-  margin-right: auto;
-}
-#concept #megureno .megu__container > .flex {
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-#concept #megureno .megu__container .megureno__img {
-  width: 64.7%;
-  padding-top: 43%;
+.page__mv .mv {
+  width: 81.25%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(./../images/top/megureno_img.jpg);
-}
-#concept #megureno .megu__container .megureno__content {
-  margin-left: 12rem;
-}
-#concept #megureno .megu__container .megureno__content strong {
-  display: block;
-  font-size: clamp(14px, 1.182rem + 1.09vw, 2rem);
-  margin-bottom: 4rem;
-  line-height: 1;
-}
-#concept #megureno .megu__container .megureno__content p.megureno__text {
-  font-size: clamp(11px, 0.918rem + 0.91vw, 1.6rem);
-  line-height: 2.56;
-  color: #252014;
-  letter-spacing: 0.04em;
-  margin-bottom: 4rem;
-}
-#concept #megureno .megureno__bg {
-  position: absolute;
-  width: 63.47%;
-  bottom: 30%;
-  right: 0;
+  margin-left: auto;
+  padding-top: 17%;
+  z-index: 50;
+  position: relative;
 }
 
-/*-------------------------
-    NEWS
--------------------------*/
-#news {
-  background-color: #BB9B52;
-  padding-top: 5.6rem;
-  padding-bottom: 6.4rem;
-}
-#news .news__container {
+.page__container {
   width: 62.5%;
   margin: auto;
-  align-items: flex-start;
-}
-#news .news__container .news__wrap {
-  width: 34.16%;
-}
-#news .news__container .blog__wrap {
-  width: 42.5%;
-}
-#news .news__container .news__content h2 {
-  font-size: clamp(22px, 1.836rem + 1.82vw, 3.2rem);
-  color: #fff;
-  font-weight: 500;
-  margin-bottom: 2.4rem;
-}
-#news .news__container .news__content h2 span {
-  font-size: clamp(11px, 0.855rem + 0.73vw, 1.4rem);
-  font-weight: 400;
-  margin-left: 16px;
-}
-#news .news__container .news__content ul li {
-  margin-bottom: 24px;
-}
-#news .news__container .news__content ul li .flex {
-  justify-content: flex-start;
-  margin-bottom: 8px;
-}
-#news .news__container .news__content ul li .flex span.new {
-  display: inline-block;
-  background-color: #fff;
-  color: #BB9B52;
-  font-size: 14px;
-  width: 42px;
-  text-align: center;
-  margin-right: 10px;
-  font-weight: 500;
-}
-#news .news__container .news__content ul li .flex span.time {
-  font-size: 14px;
-  color: #fff;
-  font-weight: 500;
-}
-#news .news__container .news__content ul li h3 {
-  font-size: clamp(11px, 0.918rem + 0.91vw, 1.6rem);
-  color: #fff;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  margin-top: 8px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #fff;
-}
-#news .news__container .news__content ul li .blog__content {
-  justify-content: space-between;
-}
-#news .news__container .news__content ul li .blog__thumb {
-  width: 16.6%;
-  padding-top: 16.6%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#news .news__container .news__content ul li .blog__info {
-  width: 80%;
 }
 
-/*-------------------------
-    gallery
--------------------------*/
-#gallery {
-  width: 100%;
-  padding-top: 14rem;
+h1.page__ttl {
+  font-size: clamp(56px, 4.727rem + 4.36vw, 8rem);
+  line-height: 1;
 }
-#gallery .flex {
-  flex-wrap: nowrap;
-  align-items: stretch;
-  margin-bottom: 1%;
-  margin: 0 0.5% 1% 0.5%;
-}
-#gallery .flex img {
-  flex: 1;
-  max-width: 100%;
-  height: auto;
-  margin: 0 0.5%;
-}
-#gallery .colum01 img:nth-of-type(1) {
-  width: 20.83%;
-}
-#gallery .colum01 img:nth-of-type(2) {
-  width: 29.166%;
-}
-#gallery .colum01 img:nth-of-type(3) {
-  width: 20.83%;
-}
-#gallery .colum01 img:nth-of-type(4) {
-  width: 25%;
-}
-#gallery .colum02 img:nth-of-type(1) {
-  width: 18.95%;
-}
-#gallery .colum02 img:nth-of-type(2) {
-  width: 19.01%;
-}
-#gallery .colum02 img:nth-of-type(3) {
-  width: 19.01%;
-}
-#gallery .colum02 img:nth-of-type(4) {
-  width: 19.01%;
-}
-#gallery .colum02 img:nth-of-type(5) {
-  width: 19.01%;
-}
-#gallery .colum03 img:nth-of-type(1) {
-  width: 25%;
-}
-#gallery .colum03 img:nth-of-type(2) {
-  width: 29.166%;
-}
-#gallery .colum03 img:nth-of-type(3) {
-  width: 20.83%;
-}
-#gallery .colum03 img:nth-of-type(4) {
-  width: 20.833%;
-}
-
-/*-------------------------
-    staff
--------------------------*/
-#staff {
-  padding-top: 16rem;
-  padding-bottom: 17rem;
-  background-image: url(./../images/top/megureno_bg.png);
-  background-size: 63%;
-  background-repeat: no-repeat;
-  background-position: bottom -13vw left -75%;
-}
-#staff .staff__container {
-  width: 81.25%;
-  margin-left: auto;
-}
-#staff .staff__container .staff__slide .slick-next {
-  display: none !important;
-}
-#staff .staff__container .staff__slide div img {
-  width: 100%;
-}/*# sourceMappingURL=main.css.map */
+h1.page__ttl span {
+  font-size: clamp(1.7rem, 1.445rem + 1.27vw, 2.4rem);
+  line-height: 1;
+}/*# sourceMappingURL=index.css.map */

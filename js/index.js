@@ -31,11 +31,11 @@ matchheight
 -------------------------*/
 
 
-    $(function() {
-        $('.more').matchHeight({
-            target: $('.bottom__contact')
-        });
+$(function() {
+    $('.contact__thumb').matchHeight({
+        target: $('.contact__content')
     });
+});
 
 $(function() {
 	$('.note__inner').matchHeight();
@@ -45,17 +45,32 @@ $(function() {
     メインビジュアルスライダー
 -------------------------*/
 $(document).ready(function(){
-    $('.mv__slider').slick({
-        dots: false, // ドットナビゲーションを有効にする
-        arrows: false,
-        infinite: true, // 無限ループ
-        speed: 1000, // スライドのスピード
-        fade: true, // フェードを有効にする
-        cssEase: 'linear', // フェードのCSS
-        autoplay: true, // 自動再生を有効にする
-        autoplaySpeed: 2000 // 自動再生のスピード
+    $('.staff__slide').slick({
+        slidesToShow: 6, // 表示されるスライドの数
+        slidesToScroll: 1, // スクロールするスライドの数
+        autoplay: true, // 自動再生
+        autoplaySpeed: 2000, // 自動再生のスピード（ミリ秒）
+        arrows: true, // 左右のナビゲーション矢印を表示
+        dots: true, // ドットナビゲーションを表示
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
 });
+
 
 /*-------------------------
     無限スライダー

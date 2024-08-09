@@ -5,7 +5,7 @@
 メインビジュアル
 -------------------------*/
 #mv {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
     position: relative;
@@ -124,10 +124,11 @@
 -------------------------*/
 #concept {
     padding-top: 16rem;
-    padding-bottom: 26rem;
+    
     .concept__container {
-        width: 500px;
+        width: 30%;
         margin: auto;
+        position: relative;
         & > .flex {
             align-items: flex-start;
             justify-content: center;
@@ -155,6 +156,232 @@
                 text-combine-upright: all;
             }
         }
+        a.common__btn {
+            transform: rotate(90deg);
+            position: absolute;
+            left: -25%;
+            bottom: 20%;
+        }
+    }
+
+    #megureno {
+        padding-top: 26rem;
+        padding-bottom: 11rem;
+        position: relative;
+        .megu__container {
+            width: 70.8%;
+            margin-right: auto;
+            & > .flex {
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+            .megureno__img {
+                width: 64.7%;
+                padding-top: 43%;
+                @include v.bg;
+                background-image: url(./../images/top/megureno_img.jpg);
+            }
+            .megureno__content {
+                margin-left: 12rem;
+                strong {
+                    display: block;
+                    font-size: clamp(14px, 1.182rem + 1.09vw, 2rem);
+                    margin-bottom: 4rem;
+                    line-height: 1;
+                }
+                p.megureno__text {
+                    font-size: clamp(11px, 0.918rem + 0.91vw, 1.6rem);
+                    line-height: 2.56;
+                    color: #252014;
+                    letter-spacing: 0.04em;
+                    margin-bottom: 4rem;
+                }
+            }
+        }
+        .megureno__bg {
+            position: absolute;
+            width: 63.47%;
+            bottom: 30%;
+            right: 0;
+        }
+    }
+
+}
+
+
+/*-------------------------
+    NEWS
+-------------------------*/
+#news {
+    background-color: #BB9B52;
+    padding-top: 5.6rem;
+    padding-bottom: 6.4rem;
+    .news__container {
+        width: 62.5%;
+        margin: auto;
+        align-items: flex-start;
+        .news__wrap {
+            width: 34.16%;
+        }
+        
+        .blog__wrap {
+            width: 42.5%;
+        }
+        .news__content {
+            h2 {
+                font-size: clamp(22px, 1.836rem + 1.82vw, 3.2rem);
+                color: #fff;
+                font-weight: 500;
+                margin-bottom: 2.4rem;
+                span {
+                    font-size: clamp(11px, 0.855rem + 0.73vw, 1.4rem);
+                    font-weight: 400;
+                    margin-left: 16px;
+                }
+            }
+            ul {
+                li {
+                    margin-bottom: 24px;
+                    .flex {
+                        justify-content: flex-start;
+                        margin-bottom: 8px;
+                        span.new {
+                            display: inline-block;
+                            background-color: #fff;
+                            color: #BB9B52;
+                            font-size: 14px;
+                            width: 42px;
+                            text-align: center;
+                            margin-right: 10px;
+                            font-weight: 500;
+                        }
+                        span.time {
+                            font-size: 14px;
+                            color: #fff;
+                            font-weight: 500;
+                        }
+                    }
+                    h3 {
+                        font-size: clamp(11px, 0.918rem + 0.91vw, 1.6rem);
+                        color: #fff;
+                        line-height: 1.5;
+                        letter-spacing: 0.04em;
+                        margin-top: 8px;
+                        padding-bottom: 8px;
+                        border-bottom: 1px solid #fff;
+                    }
+                    .blog__content {
+                        justify-content: space-between;
+                    }
+                    .blog__thumb {
+                        width: 16.6%;
+                        padding-top: 16.6%;
+                        @include v.bg;
+                    }
+                    .blog__info {
+                        width: 80%;
+                    }
+                }
+            }
+        }
     }
 }
 
+/*-------------------------
+    gallery
+-------------------------*/
+#gallery {
+    width: 100%;
+    padding-top: 14rem;
+    .flex {
+        flex-wrap: nowrap;
+        align-items: stretch;
+        margin-bottom: 1%;
+        margin: 0 0.5% 1% 0.5%;
+        img {
+            // object-fit: cover;
+            flex: 1;
+            max-width: 100%;
+            height: auto;
+            margin: 0 0.5%;
+        }
+    }
+    .colum01 {
+        img {
+            &:nth-of-type(1) {
+                width: 20.83%;
+            }
+            &:nth-of-type(2) {
+                width: 29.166%;
+            }
+            &:nth-of-type(3) {
+                width: 20.83%;
+            }
+            &:nth-of-type(4) {
+                width: 25%;
+            }
+        }
+    }
+    .colum02 {
+        img {
+            &:nth-of-type(1) {
+                width: 18.95%;
+            }
+            &:nth-of-type(2) {
+                width: 19.01%;
+            }
+            &:nth-of-type(3) {
+                width: 19.01%;
+            }
+            &:nth-of-type(4) {
+                width: 19.01%;
+            }
+            &:nth-of-type(5) {
+                width: 19.01%;
+            }
+        }
+    }
+    .colum03 {
+        img {
+            &:nth-of-type(1) {
+                width: 25%;
+            }
+            &:nth-of-type(2) {
+                width: 29.166%;
+            }
+            &:nth-of-type(3) {
+                width: 20.83%;
+            }
+            &:nth-of-type(4) {
+                width: 20.833%;
+            }
+        }
+    }
+}
+
+
+/*-------------------------
+    staff
+-------------------------*/
+#staff {
+    padding-top: 16rem;
+    padding-bottom: 17rem;
+    background-image: url(./../images/top/megureno_bg.png);
+    background-size: 63%;
+    background-repeat: no-repeat;
+    background-position: bottom -13vw left -75%;
+    .staff__container {
+        width: 81.25%;
+        margin-left: auto;
+        .staff__slide {
+            .slick-next {
+                display: none!important;
+            }
+            div {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

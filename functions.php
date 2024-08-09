@@ -11,8 +11,8 @@ function my_styles()  {
     if ( is_page('') ) {
       wp_enqueue_style( 'page_css', get_template_directory_uri() . '/scss/page/index.css');
       }
-    if ( is_page('project') ) {
-      wp_enqueue_style( 'project_css', get_template_directory_uri() . '/scss/project/index.css');
+    if ( is_page('works') ) {
+      wp_enqueue_style( 'works_css', get_template_directory_uri() . '/scss/works/index.css');
       }
 
 
