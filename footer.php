@@ -21,34 +21,34 @@
             <div class="ft__right">
                 <ul class="flex">
                     <li>
-                        <a href="">コンセプト</a>
+                        <a href="/concept">コンセプト</a>
                     </li>
                     <li>
-                        <a href="">リフォーム</a>
+                        <a href="/reform">リフォーム</a>
                     </li>
                     <li>
-                        <a href="">お知らせ</a>
+                        <a href="/news">お知らせ</a>
                     </li>
                     <li>
-                        <a href="">施工事例</a>
+                        <a href="/works">施工事例</a>
                     </li>
                     <li>
-                        <a href="">リノベーション</a>
+                        <a href="/renovation">リノベーション</a>
                     </li>
                     <li>
-                        <a href="">ブログ</a>
+                        <a href="/blog">ブログ</a>
                     </li>
                     <li>
-                        <a href="">スタッフ</a>
+                        <a href="/staff">スタッフ</a>
                     </li>
                     <li>
-                        <a href="">新築・不動産</a>
+                        <a href="/estate">新築・不動産</a>
                     </li>
                     <li>
-                        <a href="">お客様の声</a>
+                        <a href="/voice">お客様の声</a>
                     </li>
                     <li>
-                        <a href="">会社概要</a>
+                        <a href="/company">会社概要</a>
                     </li>
                 </ul>
             </div>

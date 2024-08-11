@@ -1,0 +1,8 @@
+@use "./../config/variables" as v;
+@use "./../common" as c;
+
+.estate__mv {
+    .mv {
+        background-image: url(./../../images/estate/estate_mv.jpg);
+    }
+}

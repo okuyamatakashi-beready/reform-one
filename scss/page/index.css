@@ -406,6 +406,14 @@ gnav
   position: relative;
 }
 
+.reform__mv .mv {
+  background-image: url(./../../images/reform/reform_mv.jpg);
+}
+
+.reform__content {
+  margin-bottom: 12rem;
+}
+
 .page__container {
   width: 62.5%;
   margin: auto;
@@ -497,4 +505,183 @@ ul.works__cat li a {
   font-weight: bold;
   width: auto;
   margin-right: 10px;
+}
+
+h3.reform__ttl {
+  margin-bottom: 3.2rem;
+}
+h3.reform__ttl p {
+  font-size: clamp(22px, 1.836rem + 1.82vw, 3.2rem);
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+h3.reform__ttl span {
+  font-size: clamp(12px, 1.127rem + 0.36vw, 1.4rem);
+  line-height: 1;
+  display: block;
+}
+
+/*-------------------------
+    reform
+-------------------------*/
+.intro__wrap {
+  font-size: clamp(13px, 0.918rem + 0.91vw, 1.6rem);
+  line-height: 2.5625em;
+}
+
+.content__wrap {
+  width: 81.25%;
+  margin-right: auto;
+  margin-top: 16rem;
+  margin-bottom: 18rem;
+}
+.content__wrap .content__img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60.06%;
+  padding-top: 64%;
+}
+.content__wrap .content__img--reform {
+  background-image: url(../../images/reform/reform_img.jpg);
+}
+.content__wrap .content__img--renovation {
+  background-image: url(../../images/renovation/renovation_img.jpg);
+}
+.content__wrap .content__img--estate {
+  background-image: url(../../images/estate/estate_img.jpg);
+}
+.content__wrap .content__img--staff {
+  background-image: url(../../images/staff/staff_img.jpg);
+}
+.content__wrap .content__img--right {
+  background-image: url(../../images/estate/estate_img02.jpg);
+  order: 2;
+}
+.content__wrap .content__text__wrap {
+  margin-left: 8rem;
+  width: 34.8%;
+}
+.content__wrap .content__text__wrap > p {
+  font-size: clamp(13px, 0.918rem + 0.91vw, 1.6rem);
+  line-height: 2.5625em;
+  margin-bottom: 6rem;
+}
+.content__wrap .content__text__wrap--left {
+  order: 1;
+  margin-left: 0;
+  margin-right: 8rem;
+}
+
+.content__wrap--staff {
+  width: 70.833%;
+  margin-bottom: 4rem;
+}
+.content__wrap--staff .content__img {
+  width: 65.514%;
+  padding-top: 41.17%;
+}
+.content__wrap--staff .content__text__wrap {
+  margin-left: 12rem;
+  width: 27.22%;
+}
+
+.content__wrap--right {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/*-------------------------
+    contact
+-------------------------*/
+#contact {
+  width: 100%;
+}
+#contact .contact__container .flex .contact__thumb {
+  width: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../images/common/contact_bg.jpg) !important;
+}
+#contact .contact__container .flex .contact__content {
+  width: 50%;
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../images/common/contact.jpg) !important;
+}
+#contact .contact__container .flex .contact__content .contact__content__wrap {
+  width: 40%;
+  margin-left: 12rem;
+}
+#contact .contact__container .flex .contact__content .contact__content__wrap p {
+  font-size: clamp(11px, 0.918rem + 0.91vw, 1.6rem);
+  line-height: 1.875em;
+  margin-bottom: 3.2rem;
+}
+
+.renovation__kinds {
+  padding: 7.8rem 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(./../../images/renovation/kinds_bg.jpg);
+}
+.renovation__kinds .kinds__container {
+  width: 62.5%;
+  margin: auto;
+}
+.renovation__kinds .kinds__container .flex {
+  align-items: flex-start;
+}
+.renovation__kinds .kinds__container .flex .kinds__content {
+  width: 50%;
+}
+.renovation__kinds .kinds__container .flex .kinds__content figure {
+  margin-bottom: 3.2rem;
+}
+.renovation__kinds .kinds__container .flex .kinds__content p {
+  font-size: clamp(12px, 1.055rem + 0.73vw, 1.6rem);
+  line-height: 1.875em;
+  margin-bottom: 4rem;
+}
+.renovation__kinds .kinds__container .flex .kinds__content a {
+  width: 75%;
+  border-radius: 50px;
+  color: #fff;
+  font-size: clamp(12px, 0.982rem + 1.09vw, 1.8rem);
+  background-color: #BB9B52;
+  text-align: center;
+  display: block;
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+}
+.renovation__kinds .kinds__container .flex .one__house {
+  box-sizing: border-box;
+  padding-right: 11rem;
+  border-right: 2px solid #BB9B52;
+}
+.renovation__kinds .kinds__container .flex .one__house figure img {
+  width: 200px;
+}
+.renovation__kinds .kinds__container .flex .seventys__one__house {
+  box-sizing: border-box;
+  padding-left: 11rem;
+}
+.renovation__kinds .kinds__container .flex .seventys__one__house figure img {
+  width: 235px;
+}
+.renovation__kinds .kinds__container .flex .one__estate {
+  box-sizing: border-box;
+  padding-left: 11rem;
+}
+.renovation__kinds .kinds__container .flex .one__estate figure img {
+  width: 240px;
+}
+.renovation__kinds .kinds__container .flex .one__estate div {
+  margin-bottom: 4rem;
 }/*# sourceMappingURL=index.css.map */

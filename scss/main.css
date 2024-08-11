@@ -742,6 +742,22 @@ gnav
 #staff .staff__container .staff__slide .slick-next {
   display: none !important;
 }
-#staff .staff__container .staff__slide div img {
+#staff .staff__container .staff__slide div.slide {
+  transform-style: preserve-3d;
+  transition: transform 0.2s;
+  height: 13.6vw;
+  position: relative;
+}
+#staff .staff__container .staff__slide div.slide:hover {
+  transform: rotateX(180deg);
+}
+#staff .staff__container .staff__slide div.slide img {
   width: 100%;
+  backface-visibility: hidden;
+  height: auto;
+  left: 0;
+  position: absolute;
+}
+#staff .staff__container .staff__slide div.slide img:last-of-type {
+  transform: rotateX(180deg);
 }/*# sourceMappingURL=main.css.map */

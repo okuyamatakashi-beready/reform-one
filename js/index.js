@@ -41,6 +41,13 @@ $(function() {
 	$('.note__inner').matchHeight();
 });
 
+$(function() {
+    $('.one__estate div').matchHeight({
+        target: $('.one__house div')
+    });
+});
+
+
 /*-------------------------
     メインビジュアルスライダー
 -------------------------*/

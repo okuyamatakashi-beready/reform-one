@@ -381,9 +381,24 @@
             .slick-next {
                 display: none!important;
             }
-            div {
+            div.slide {
+                transform-style: preserve-3d;
+                transition: transform .2s;
+                height: 13.6vw;
+                position: relative;
+                &:hover {
+                    transform: rotateX( 180deg );
+                }
                 img {
                     width: 100%;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                    height: auto;
+                    left: 0;
+                    position: absolute;
+                    &:last-of-type {
+                        transform: rotateX( 180deg );
+                    }
                 }
             }
         }

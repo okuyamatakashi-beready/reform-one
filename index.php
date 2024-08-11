@@ -78,7 +78,7 @@
                                     巡り巡って、あなたの理想を叶えるために。
                                 </p>
 
-                                <a href="/concept" class="common__btn">
+                                <a href="/concept#megureno" class="common__btn">
                                     <div class="flex">
                                         <p>view more</p>
                                         <div class="common__btn--line">
@@ -230,32 +230,40 @@
                     staff<span>oneのスタッフ紹介</span>
                 </h2>
                 <div class="staff__slide">
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/top/staff01.png" alt="" class="">
+                    <div class="slide">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff01.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff01-02.png" alt="">
                     </div>
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/top/staff02.png" alt="" class="">
+                    <div class="slide">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff02.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff02-02.png" alt="">
                     </div>
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/top/staff03.png" alt="" class="">
+                    <div class="slide">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff03.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff03-02.png" alt="">
                     </div>
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/top/staff04.png" alt="" class="">
+                    <div class="slide">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff04.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff04-02.png" alt="">
                     </div>
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/top/staff01.png" alt="" class="">
+                    <div class="slide">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff05.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff05-02.png" alt="">
                     </div>
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/top/staff02.png" alt="" class="">
+                    <div class="slide">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff06.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff06-02.png" alt="">
                     </div>
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/top/staff03.png" alt="" class="">
+                    <div class="slide">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff07.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff07-02.png" alt="">
                     </div>
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/top/staff04.png" alt="" class="">
+                    <div class="slide">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff08.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff08-02.png" alt="">
                     </div>
                 </div>
-                <a href="/concept" class="common__btn">
+                <a href="/staff" class="common__btn">
                     <div class="flex">
                         <p>view more</p>
                         <div class="common__btn--line">
