@@ -31,11 +31,7 @@ matchheight
 -------------------------*/
 
 
-$(function() {
-    $('.contact__thumb').matchHeight({
-        target: $('.contact__content')
-    });
-});
+
 
 $(function() {
 	$('.note__inner').matchHeight();
@@ -46,6 +42,13 @@ $(function() {
         target: $('.one__house div')
     });
 });
+if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+    $(function() {
+        $('.contact__thumb').matchHeight({
+            target: $('.contact__content')
+        });
+    });
+}
 
 
 /*-------------------------
@@ -70,7 +73,7 @@ $(document).ready(function(){
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1
                 }
             }

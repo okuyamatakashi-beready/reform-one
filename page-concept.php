@@ -21,17 +21,17 @@
 
             <p>
                 はじめまして、リフォームワン株式会社です。<br>
-                上田市にて塗装業60余年、建設業も25年以上営んできた<br>
+                上田市にて塗装業60余年、建設業も25年以上営んできた<br class="sp">
                 総合建築・不動産会社です。<br>
-                「住まいを通じて好循環型社会を創る」の経営理念のもと<br>
-                ヒト・モノ・おカネをスパイラルアップしながら循環させ、<br>
+                「住まいを通じて好循環型社会を創る」の経営理念のもと<br class="sp">
+                ヒト・モノ・おカネをスパイラルアップしながら循環させ、<br class="sp">
                 豊かな暮らしを共につくることをビジョンに掲げています。
             </p>
 
             <p>
                 ただキレイにするだけなら誰でもできる…<br>
-                それに加えて「意味のあるリノベーション」を大切にしており、<br>
-                お客様の日常に寄り添いながらもユニークさやこだわりを内包させる<br>
+                それに加えて「意味のあるリノベーション」を大切にしており、<br class="sp">
+                お客様の日常に寄り添いながらもユニークさやこだわりを内包させる<br class="sp">
                 そんなリノベーションを手掛けていきます。
             </p>
         </div>
@@ -76,21 +76,21 @@
             </h3>
 
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/concept/morelroom01_pc.png" alt="" class="pc">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/concept/morelroom01_sp.png" alt="" class="sp">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/concept/morelroom01_pc.png" alt="" class="sp">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/concept/morelroom01_sp.png" alt="" class="pc">
             </figure>
         </div>
 
         <div class="sec02">
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/concept/morelroom02_pc.png" alt="" class="pc">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/concept/morelroom02_sp.png" alt="" class="sp">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/concept/morelroom02_pc.png" alt="" class="sp">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/concept/morelroom02_sp.png" alt="" class="pc">
             </figure>
         </div>
         <div class="sec03">
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/concept/morelroom03_pc.png" alt="" class="pc">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/concept/morelroom03_sp.png" alt="" class="sp">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/concept/morelroom03_pc.png" alt="" class="sp">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/concept/morelroom03_sp.png" alt="" class="pc">
             </figure>
         </div>
     </div>

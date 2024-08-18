@@ -141,7 +141,8 @@
 
 
 <div class="fixed__btn">
-	<a href="/" class=""></a>
+	<a href="/" class="btn reserve">来場予約</a>
+	<a href="/" class="btn material">資料請求</a>
 </div>
 
 
