@@ -27,9 +27,15 @@ br.pc {
 }
 .pc {
     display: block;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
 .sp {
     display: none;
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
 }
 .non_image {
     background-image: url(../images/common/non_image.jpg);
@@ -48,6 +54,7 @@ br.pc {
         left: calc(100% - 10px);
     }
 }
+
 .common__btn {
     font-size: clamp(11px, 0.918rem + 0.91vw, 1.6rem);
     color: #252014;

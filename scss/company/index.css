@@ -42,9 +42,19 @@ br.pc {
 .pc {
   display: block;
 }
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+}
 
 .sp {
   display: none;
+}
+@media screen and (max-width: 768px) {
+  .sp {
+    display: block;
+  }
 }
 
 .non_image {

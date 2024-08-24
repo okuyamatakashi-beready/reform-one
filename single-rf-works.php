@@ -99,8 +99,7 @@
 
                 
                 <div class="contact__content">
-                    <?php echo do_shortcode('[contact-form-7 id="3ec641b" title="コンタクトフォーム 1"]'); ?>
-
+                    <?php echo do_shortcode('[contact-form-7 id="3ec641b" title="コンタクトフォーム 1" your-title="[cf7_post_title]"'); ?>
                 </div>
             </div>
         </div>

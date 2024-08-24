@@ -362,7 +362,7 @@
         </section>
 
         <div id="gallery">
-            <div class="pc">
+            <div class="">
                 <div class="colum01 flex">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery01.jpg" alt="" class="">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery02.jpg" alt="" class="">
@@ -370,21 +370,21 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery04.jpg" alt="" class="">
                 </div>
                 <div class="colum02 flex">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery05.jpg" alt="" class="sp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery06.jpg" alt="" class="sp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery07.jpg" alt="" class="sp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery08.jpg" alt="" class="sp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery09.jpg" alt="" class="sp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery05-sp.png" alt="" class="pc">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery06-sp.png" alt="" class="pc">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery07-sp.png" alt="" class="pc">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery08-sp.png" alt="" class="pc">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery05.jpg" alt="" class="pc">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery06.jpg" alt="" class="pc">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery07.jpg" alt="" class="pc">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery08.jpg" alt="" class="pc">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery09.jpg" alt="" class="pc">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery05-sp.png" alt="" class="sp">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery06-sp.png" alt="" class="sp">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery07-sp.png" alt="" class="sp">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery08-sp.png" alt="" class="sp">
                 </div>
                 <div class="colum03 flex">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery10.jpg" alt="" class="sp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery11.jpg" alt="" class="sp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery12.jpg" alt="" class="sp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery13.jpg" alt="" class="sp">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery10.jpg" alt="" class="pc">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery11.jpg" alt="" class="pc">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery12.jpg" alt="" class="pc">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/gallery13.jpg" alt="" class="pc">
                 </div>
 
 
