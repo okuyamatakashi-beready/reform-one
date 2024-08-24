@@ -34,9 +34,19 @@
 br.sp {
   display: none;
 }
+@media screen and (max-width: 768px) {
+  br.sp {
+    display: block;
+  }
+}
 
 br.pc {
   display: block;
+}
+@media screen and (max-width: 768px) {
+  br.pc {
+    display: none;
+  }
 }
 
 .pc {

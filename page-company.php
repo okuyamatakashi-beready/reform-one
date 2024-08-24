@@ -24,13 +24,13 @@
             </dl>
 
             <p>
-                私たちはお客様の笑顔の為にまごころサービスNo.1の企業を目指します。<br>
-                私たちはお客様の悩み、不安に思いやりを持って全力で対応します。<br>
-                私たちは「本当にあなたに会えて良かった。ありがとう。」に最高の喜びを感じます。
+                私たちはお客様の笑顔の為に<br class="sp">まごころサービスNo.1の企業を目指します。<br>
+                私たちはお客様の悩み、<br class="sp">不安に思いやりを持って全力で対応します。<br>
+                私たちは<br class="sp">「本当にあなたに会えて良かった。ありがとう。」<br class="sp">に最高の喜びを感じます。
             </p>
             <p>
                 以上のことにより、<br>
-                私たちは三方由し経営を基本とし、地域のあらゆる人々が幸せになれる住環境作りに貢献します。
+                私たちは三方由し経営を基本とし、<br class="sp">地域のあらゆる人々が幸せになれる<br class="sp">住環境作りに貢献します。
             </p>
         </div>
 
@@ -38,10 +38,7 @@
 
     <section id="message">
         <div class="page__container">
-            <h3 class="reform__ttl">
-                <p>other works</p>
-                <span>新築＆不動産事例</span>
-            </h3>
+
             <div class="message__container">
                 <div class="flex">
                     <figure>
@@ -304,7 +301,7 @@
                             <span>16</span>
                         </div>
                         <strong>
-                        床下・屋根裏ご希望の方無料点検します
+                        床下・屋根裏<br class="sp">ご希望の方<br class="sp">無料点検します
                         </strong>
                     </li>
                 </ul>

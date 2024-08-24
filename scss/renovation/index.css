@@ -34,9 +34,19 @@
 br.sp {
   display: none;
 }
+@media screen and (max-width: 768px) {
+  br.sp {
+    display: block;
+  }
+}
 
 br.pc {
   display: block;
+}
+@media screen and (max-width: 768px) {
+  br.pc {
+    display: none;
+  }
 }
 
 .pc {
@@ -653,6 +663,12 @@ gnav
   margin-left: auto;
   margin-bottom: 8.7rem;
 }
+@media screen and (max-width: 768px) {
+  .before__after {
+    width: 85%;
+    margin-bottom: 80px;
+  }
+}
 .before__after .before__after__wrap .ba__content {
   box-sizing: border-box;
   padding: 7rem 10rem;
@@ -662,6 +678,12 @@ gnav
   height: 31vw;
   transition: all 0.3s;
   margin-bottom: 2.4rem;
+}
+@media screen and (max-width: 768px) {
+  .before__after .before__after__wrap .ba__content {
+    padding: 30px 30px;
+    height: 200px;
+  }
 }
 .before__after .before__after__wrap .ba__content .ba__text strong {
   font-size: clamp(22px, 1.836rem + 1.82vw, 3.2rem);

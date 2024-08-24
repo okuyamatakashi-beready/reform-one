@@ -34,9 +34,19 @@
 br.sp {
   display: none;
 }
+@media screen and (max-width: 768px) {
+  br.sp {
+    display: block;
+  }
+}
 
 br.pc {
   display: block;
+}
+@media screen and (max-width: 768px) {
+  br.pc {
+    display: none;
+  }
 }
 
 .pc {
@@ -652,12 +662,27 @@ gnav
   margin-right: auto;
   margin-left: auto;
 }
+@media screen and (max-width: 768px) {
+  .company__content {
+    width: 100%;
+  }
+}
 .company__content dl {
   text-align: center;
   margin-top: 8rem;
 }
+@media screen and (max-width: 768px) {
+  .company__content dl {
+    margin-top: 80px;
+  }
+}
 .company__content dl:last-of-type {
   margin-bottom: 8rem;
+}
+@media screen and (max-width: 768px) {
+  .company__content dl:last-of-type {
+    margin-bottom: 80px;
+  }
 }
 .company__content dl dt {
   font-size: clamp(17px, 1.445rem + 1.27vw, 2.4rem);
@@ -670,16 +695,34 @@ gnav
   font-weight: 700;
   letter-spacing: 0.1em;
 }
+@media screen and (max-width: 768px) {
+  .company__content dl dd {
+    font-size: 4.5vw;
+  }
+}
 .company__content p {
   font-size: clamp(12px, 1.055rem + 0.73vw, 1.6rem);
   line-height: 2.5625em;
   margin-bottom: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .company__content p {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
 }
 
 #message {
   padding-top: 14rem;
   position: relative;
   padding-bottom: 13rem;
+}
+@media screen and (max-width: 768px) {
+  #message {
+    padding-top: 60px;
+    padding-bottom: 130px;
+  }
 }
 #message img.one {
   position: absolute;
@@ -688,11 +731,23 @@ gnav
   bottom: 0;
   z-index: -10;
 }
+@media screen and (max-width: 768px) {
+  #message img.one {
+    width: 90%;
+  }
+}
 #message .message__container {
   width: 75%;
   margin-left: 16.666%;
   margin-right: 8.3333%;
   margin-top: 9rem;
+}
+@media screen and (max-width: 768px) {
+  #message .message__container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 #message .message__container .flex {
   align-items: flex-start;
@@ -702,9 +757,21 @@ gnav
   line-height: 2.5625em;
   margin-bottom: 3rem;
 }
+@media screen and (max-width: 768px) {
+  #message .message__container p {
+    font-size: 14px;
+  }
+}
 #message .message__container figure {
   order: 2;
   width: 44.666%;
+}
+@media screen and (max-width: 768px) {
+  #message .message__container figure {
+    width: 80%;
+    order: 1;
+    margin: auto auto 40px auto;
+  }
 }
 #message .message__container figure img {
   width: 100%;
@@ -713,10 +780,21 @@ gnav
   width: 52.22%;
   margin-bottom: 5rem;
 }
+@media screen and (max-width: 768px) {
+  #message .message__container .message__content {
+    width: 100%;
+    order: 2;
+  }
+}
 #message .message__container .message__content p {
   font-size: clamp(12px, 1.055rem + 0.73vw, 1.6rem);
   line-height: 2.5625em;
   margin-bottom: 3rem;
+}
+@media screen and (max-width: 768px) {
+  #message .message__container .message__content p {
+    font-size: 14px;
+  }
 }
 
 #comapny__profile {
@@ -727,10 +805,20 @@ gnav
   margin-right: auto;
   margin-left: auto;
 }
+@media screen and (max-width: 768px) {
+  #comapny__profile .profile__content {
+    width: 100%;
+  }
+}
 #comapny__profile .profile__content dl {
   padding: 3.4rem 0 3.2rem 0;
   border-bottom: 2px solid #BB9B52;
   align-items: flex-start;
+}
+@media screen and (max-width: 768px) {
+  #comapny__profile .profile__content dl {
+    padding: 20px 0;
+  }
 }
 #comapny__profile .profile__content dl dt {
   width: 17.5%;
@@ -738,10 +826,23 @@ gnav
   font-weight: bold;
   padding-top: 2px;
 }
+@media screen and (max-width: 768px) {
+  #comapny__profile .profile__content dl dt {
+    width: 100%;
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+}
 #comapny__profile .profile__content dl dd {
   width: 82.5%;
   font-size: clamp(12px, 1.055rem + 0.73vw, 1.6rem);
   line-height: 1.875em;
+}
+@media screen and (max-width: 768px) {
+  #comapny__profile .profile__content dl dd {
+    width: 100%;
+    font-size: 14px;
+  }
 }
 #comapny__profile .profile__content dl dd a {
   padding-right: 10px;
@@ -775,13 +876,30 @@ gnav
   padding-top: 16rem;
   padding-bottom: 16rem;
 }
+@media screen and (max-width: 768px) {
+  #promise {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
 #promise h3 {
   margin-bottom: 6.3rem;
+}
+@media screen and (max-width: 768px) {
+  #promise h3 {
+    margin-bottom: 40px;
+  }
 }
 #promise .promise__content p {
   font-size: clamp(12px, 1.055rem + 0.73vw, 1.6rem);
   line-height: 1.875em;
   margin-bottom: 6.3rem;
+}
+@media screen and (max-width: 768px) {
+  #promise .promise__content p {
+    font-size: 14px;
+    margin-bottom: 60px;
+  }
 }
 #promise .promise__content ul {
   flex-wrap: wrap;
@@ -791,6 +909,12 @@ gnav
   width: 25%;
   justify-content: flex-start;
   margin-bottom: 5rem;
+}
+@media screen and (max-width: 768px) {
+  #promise .promise__content ul li {
+    width: 50%;
+    margin-bottom: 30px;
+  }
 }
 #promise .promise__content ul li div {
   color: #BB9B52;
@@ -806,7 +930,17 @@ gnav
   font-weight: bold;
   line-height: 1;
 }
+@media screen and (max-width: 768px) {
+  #promise .promise__content ul li div span {
+    font-size: 24px;
+  }
+}
 #promise .promise__content ul li strong {
   display: block;
   font-size: clamp(14px, 1.255rem + 0.73vw, 1.8rem);
+}
+@media screen and (max-width: 768px) {
+  #promise .promise__content ul li strong {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=index.css.map */

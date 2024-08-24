@@ -20,6 +20,10 @@ ul.staff__list {
         margin-bottom: 4rem;
         transform-style: preserve-3d;
         transition: transform .7s;
+        @media screen and (max-width: 768px) {
+            width: 50%;
+            height: 175px;
+        }
         &:hover {
             transform: rotateX( 180deg );
         }
@@ -51,6 +55,9 @@ ul.staff__list {
         width: 62.5%;
         margin-left: auto;
         margin-right: auto;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
         ul {
             flex-wrap: wrap;
             margin-bottom: 16rem;

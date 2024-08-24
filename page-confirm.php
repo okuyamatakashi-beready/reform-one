@@ -17,7 +17,7 @@
 
                 
                 <div class="contact__content">
-                    <?php echo do_shortcode('[contact-form-7 id="1058" title="リフォームワン確認フォーム"]'); ?>
+                    <?php echo do_shortcode('[contact-form-7 id="fa78917" title="通常お問い合わせ確認フォーム"]'); ?>
 
                 </div>
             </div>
