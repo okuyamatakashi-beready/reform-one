@@ -655,4 +655,8 @@ gnav
 
 .works__mv .mv {
   background-image: url(./../../images/news/news_bg.jpg);
+}
+
+.voice__mv .mv {
+  background-image: url(./../../images/voice/voice-mv.jpg);
 }/*# sourceMappingURL=index.css.map */

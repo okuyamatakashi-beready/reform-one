@@ -658,6 +658,11 @@ gnav
   width: 62.5%;
   margin: auto auto 0rem auto;
 }
+@media screen and (max-width: 768px) {
+  .single__container {
+    width: 85%;
+  }
+}
 .single__container .contact__wrapper {
   width: 100%;
   box-sizing: border-box;
@@ -665,9 +670,19 @@ gnav
   padding-bottom: 8rem;
   margin-bottom: 8rem;
 }
+@media screen and (max-width: 768px) {
+  .single__container .contact__wrapper {
+    margin-bottom: 80px;
+  }
+}
 .single__container .contact__wrapper .contact__container {
   width: 66.666%;
   margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .single__container .contact__wrapper .contact__container {
+    width: 80%;
+  }
 }
 .single__container .contact__wrapper .contact__container h3 {
   text-align: center;
@@ -687,6 +702,11 @@ gnav
 .single__container .contact__wrapper .contact__container .contact__content dl {
   margin-bottom: 4rem;
 }
+@media screen and (max-width: 768px) {
+  .single__container .contact__wrapper .contact__container .contact__content dl {
+    margin-bottom: 30px;
+  }
+}
 .single__container .contact__wrapper .contact__container .contact__content dl:last-of-type {
   align-items: flex-start;
 }
@@ -695,9 +715,33 @@ gnav
   font-size: clamp(13px, 1.118rem + 0.91vw, 1.8rem);
   color: #252014;
 }
+@media screen and (max-width: 768px) {
+  .single__container .contact__wrapper .contact__container .contact__content dl dt {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+.single__container .contact__wrapper .contact__container .contact__content dl dt span {
+  color: red;
+  font-size: 11px;
+  display: block;
+}
 .single__container .contact__wrapper .contact__container .contact__content dl dd {
   width: 73.75%;
   font-size: clamp(13px, 1.118rem + 0.91vw, 1.8rem);
+}
+@media screen and (max-width: 768px) {
+  .single__container .contact__wrapper .contact__container .contact__content dl dd {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+.single__container .contact__wrapper .contact__container .contact__content dl dd .flex {
+  justify-content: space-between;
+}
+.single__container .contact__wrapper .contact__container .contact__content dl dd .flex div {
+  width: 48%;
 }
 .single__container .contact__wrapper .contact__container .contact__content dl dd input, .single__container .contact__wrapper .contact__container .contact__content dl dd textarea {
   border-radius: 10px;
@@ -709,6 +753,140 @@ gnav
   box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.2);
   font-size: clamp(1.1rem, 0.918rem + 0.91vw, 1.6rem);
 }
+@media screen and (max-width: 768px) {
+  .single__container .contact__wrapper .contact__container .contact__content dl dd input, .single__container .contact__wrapper .contact__container .contact__content dl dd textarea {
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+}
+.single__container .contact__wrapper .contact__container .contact__content dl dd .cf7-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.single__container .contact__wrapper .contact__container .contact__content dl dd .cf7-checkbox .wpcf7-list-item {
+  flex: 1 1 45%;
+  margin-bottom: 0.5rem;
+}
+.single__container .contact__wrapper .contact__container .contact__content dl dd .cf7-checkbox .wpcf7-list-item label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.single__container .contact__wrapper .contact__container .contact__content dl dd .cf7-checkbox .wpcf7-list-item label input[type=checkbox] {
+  margin-right: 10px;
+}
+.single__container .contact__wrapper .contact__container .contact__content dl dd input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  position: relative;
+  padding: 0;
+}
+.single__container .contact__wrapper .contact__container .contact__content dl dd input[type=checkbox]:checked {
+  background-color: #0073aa;
+  border-color: #0073aa;
+}
+.single__container .contact__wrapper .contact__container .contact__content dl dd input[type=checkbox]:checked:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 0px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.single__container .contact__wrapper .contact__container .contact__content dl dd .cf7-radio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.single__container .contact__wrapper .contact__container .contact__content dl dd .cf7-radio .wpcf7-list-item {
+  flex: 1 1 45%;
+  margin-bottom: 0.5rem;
+}
+.single__container .contact__wrapper .contact__container .contact__content dl dd .cf7-radio .wpcf7-list-item label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.single__container .contact__wrapper .contact__container .contact__content dl dd .cf7-radio .wpcf7-list-item label input[type=radio] {
+  margin-right: 10px;
+}
+.single__container .contact__wrapper .contact__container .contact__content dl dd input[type=radio] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  position: relative;
+  background-color: white;
+  padding: 0;
+}
+.single__container .contact__wrapper .contact__container .contact__content dl dd input[type=radio]:checked {
+  border-color: #0073aa;
+  background-color: #0073aa;
+}
+.single__container .contact__wrapper .contact__container .contact__content dl dd input[type=radio]:checked:after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+.single__container .contact__wrapper .contact__container .contact__content dl dd .cf7-datepicker input[type=date] {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  background-color: white;
+}
+.single__container .contact__wrapper .contact__container .contact__content dl dd .cf7-datepicker input[type=date]::-webkit-inner-spin-button, .single__container .contact__wrapper .contact__container .contact__content dl dd .cf7-datepicker input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+.single__container .contact__wrapper .contact__container .contact__content dl dd .cf7-datepicker input[type=date]:focus {
+  border-color: #005faf;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 95, 175, 0.5);
+}
+.single__container .contact__wrapper .contact__container .contact__content dl dd select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  background-color: white;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("dropdown-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px 16px;
+}
+.single__container .contact__wrapper .contact__container .contact__content dl dd select:focus {
+  border-color: #005faf;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 95, 175, 0.5);
+}
+.single__container .contact__wrapper .contact__container .contact__content dl dd select::-ms-expand {
+  display: none;
+}
 .single__container .contact__wrapper .contact__container .contact__content input.confirm {
   width: 48%;
   text-align: center;
@@ -719,6 +897,67 @@ gnav
   margin: 6.4rem auto auto auto;
   font-weight: bold;
   display: block;
+}
+@media screen and (max-width: 768px) {
+  .single__container .contact__wrapper .contact__container .contact__content input.confirm {
+    width: 220px;
+  }
+}
+.single__container .contact__wrapper .visit__container {
+  width: 80%;
+}
+.single__container .contact__wrapper .visit__container a.tel {
+  width: 70%;
+  display: block;
+  margin: auto auto 60px auto;
+  background-color: #BB9B52;
+  color: #fff;
+  border-radius: 20px;
+  padding: 2.4rem 0;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .single__container .contact__wrapper .visit__container a.tel {
+    width: 100%;
+    padding: 25px 0;
+  }
+}
+.single__container .contact__wrapper .visit__container a.tel .flex {
+  justify-content: center;
+}
+.single__container .contact__wrapper .visit__container a.tel p:nth-of-type(1) {
+  font-size: clamp(14px, 1.182rem + 1.09vw, 2rem);
+}
+@media screen and (max-width: 768px) {
+  .single__container .contact__wrapper .visit__container a.tel p:nth-of-type(1) {
+    font-size: 14px;
+  }
+}
+.single__container .contact__wrapper .visit__container a.tel p:nth-of-type(2) {
+  font-size: clamp(12px, 0.982rem + 1.09vw, 1.8rem);
+}
+@media screen and (max-width: 768px) {
+  .single__container .contact__wrapper .visit__container a.tel p:nth-of-type(2) {
+    font-size: 14px;
+  }
+}
+.single__container .contact__wrapper .visit__container a.tel img {
+  margin-right: 16px;
+}
+.single__container .contact__wrapper .visit__container a.tel span {
+  font-size: clamp(30px, 2.564rem + 2.18vw, 4.2rem);
+  color: #fff;
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .single__container .contact__wrapper .visit__container a.tel span {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .single__container .contact__wrapper .confirm__container {
+    width: 100%;
+  }
 }
 
 .confirm {
@@ -739,6 +978,12 @@ gnav
   line-height: 1.875em;
   margin-bottom: 4rem;
 }
+@media screen and (max-width: 768px) {
+  .confirm .confirm__container .thanks__content > p {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+}
 .confirm .confirm__container .thanks__content a.tel {
   width: 70%;
   display: block;
@@ -749,14 +994,30 @@ gnav
   padding: 2.4rem 0;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .confirm .confirm__container .thanks__content a.tel {
+    width: 100%;
+    padding: 25px 0;
+  }
+}
 .confirm .confirm__container .thanks__content a.tel .flex {
   justify-content: center;
 }
 .confirm .confirm__container .thanks__content a.tel p:nth-of-type(1) {
   font-size: clamp(14px, 1.182rem + 1.09vw, 2rem);
 }
+@media screen and (max-width: 768px) {
+  .confirm .confirm__container .thanks__content a.tel p:nth-of-type(1) {
+    font-size: 14px;
+  }
+}
 .confirm .confirm__container .thanks__content a.tel p:nth-of-type(2) {
   font-size: clamp(12px, 0.982rem + 1.09vw, 1.8rem);
+}
+@media screen and (max-width: 768px) {
+  .confirm .confirm__container .thanks__content a.tel p:nth-of-type(2) {
+    font-size: 14px;
+  }
 }
 .confirm .confirm__container .thanks__content a.tel img {
   margin-right: 16px;

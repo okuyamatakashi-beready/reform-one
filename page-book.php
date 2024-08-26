@@ -10,7 +10,7 @@
     <div class="page__container">
         <h1 class="page__ttl">
             <p>contact</p>
-            <span>お問い合わせ</span>
+            <span>資料請求</span>
         </h1>
 
     </div>
@@ -20,13 +20,13 @@
         <div class="contact__wrapper">
             <div class="contact__container">
                 <h3>
-                    <span>contact</span>
-                    <p>こちらのリフォームに関する<br class="sp">お問い合わせはこちら</p>
+                    <span>資料請求</span>
+                    <p>ご希望の資料をお送りいたします。</p>
                 </h3>
 
                 
                 <div class="contact__content">
-                    <?php echo do_shortcode('[contact-form-7 id="6119d2f" title="通常お問い合わせ"]'); ?>
+                    <?php echo do_shortcode('[contact-form-7 id="05cc35f" title="資料請求フォーム"]'); ?>
 
                 </div>
             </div>

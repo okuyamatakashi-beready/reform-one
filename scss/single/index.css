@@ -658,6 +658,11 @@ gnav
   width: 62.5%;
   margin: auto auto 12rem auto;
 }
+@media screen and (max-width: 768px) {
+  .single__container {
+    width: 85%;
+  }
+}
 .single__container .single__thumb {
   width: 100%;
   padding-top: 56.25%;
@@ -713,6 +718,11 @@ gnav
   letter-spacing: 0.04em;
   line-height: 2.5em;
 }
+@media screen and (max-width: 768px) {
+  .single__container .single__content p {
+    font-size: 13px;
+  }
+}
 .single__container .single__content p img.emoji {
   width: 1em;
   height: 1em;
@@ -734,6 +744,11 @@ gnav
   margin-bottom: 10px;
   margin-top: 2.4rem;
 }
+@media screen and (max-width: 768px) {
+  .single__container .single__content h2 {
+    font-size: 16px;
+  }
+}
 .single__container .single__content h2::before {
   content: "";
   width: 12px;
@@ -744,6 +759,12 @@ gnav
   top: -8px;
   bottom: 0;
   margin: auto;
+}
+.single__container .single__content h6, .single__container .single__content b, .single__container .single__content h3, .single__container .single__content h4 {
+  font-size: clamp(14px, 1.182rem + 1.09vw, 2rem);
+  color: #252014;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
 }
 .single__container .single__img {
   background-position: center center;
@@ -847,9 +868,20 @@ gnav
   background-color: #BB9B52;
   margin-bottom: 8rem;
 }
+@media screen and (max-width: 768px) {
+  .single__container .contact__wrapper {
+    margin-bottom: 80px;
+  }
+}
 .single__container .contact__wrapper .contact__container {
   width: 66.666%;
   margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .single__container .contact__wrapper .contact__container {
+    width: 80%;
+    margin: 30px auto 60px auto;
+  }
 }
 .single__container .contact__wrapper .contact__container h3 {
   text-align: center;
@@ -869,6 +901,11 @@ gnav
 .single__container .contact__wrapper .contact__container .contact__content dl {
   margin-bottom: 4rem;
 }
+@media screen and (max-width: 768px) {
+  .single__container .contact__wrapper .contact__container .contact__content dl {
+    margin-bottom: 30px;
+  }
+}
 .single__container .contact__wrapper .contact__container .contact__content dl:last-of-type {
   align-items: flex-start;
 }
@@ -877,8 +914,19 @@ gnav
   font-size: clamp(13px, 1.118rem + 0.91vw, 1.8rem);
   color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .single__container .contact__wrapper .contact__container .contact__content dl dt {
+    width: 100%;
+    font-size: 14px;
+  }
+}
 .single__container .contact__wrapper .contact__container .contact__content dl dd {
   width: 73.75%;
+}
+@media screen and (max-width: 768px) {
+  .single__container .contact__wrapper .contact__container .contact__content dl dd {
+    width: 100%;
+  }
 }
 .single__container .contact__wrapper .contact__container .contact__content dl dd input, .single__container .contact__wrapper .contact__container .contact__content dl dd textarea {
   border-radius: 10px;
@@ -887,6 +935,11 @@ gnav
   padding: 8px 16px;
   border: none;
   font-size: clamp(1.1rem, 0.918rem + 0.91vw, 1.6rem);
+}
+@media screen and (max-width: 768px) {
+  .single__container .contact__wrapper .contact__container .contact__content dl dd input, .single__container .contact__wrapper .contact__container .contact__content dl dd textarea {
+    font-size: 14px;
+  }
 }
 .single__container .contact__wrapper .contact__container .contact__content input.confirm {
   width: 48%;
@@ -897,6 +950,12 @@ gnav
   margin: 6.4rem auto auto auto;
   font-weight: bold;
   display: block;
+}
+@media screen and (max-width: 768px) {
+  .single__container .contact__wrapper .contact__container .contact__content input.confirm {
+    width: 220px;
+    margin: 40px auto auto auto;
+  }
 }
 .single__container .common__btn p {
   margin-left: 10px;

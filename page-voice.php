@@ -1,7 +1,7 @@
 
 <?php get_header(); ?>
 
-<div class="page__mv works__mv">
+<div class="page__mv voice__mv">
     <img src="<?php echo get_template_directory_uri(); ?>/images/page_bg.png" alt="">
     <div class="mv"></div>
 </div>
@@ -9,37 +9,20 @@
 <div class="works">
     <div class="page__container">
         <h1 class="page__ttl">
-            <p>works</p>
-            <span>施工事例</span>
+            <p>voice</p>
+            <span>お客様の声</span>
         </h1>
 
-        <ul class="works__cat flex">
-            <li>
-                <a href="">all</a>
-            </li>
-            <li>
-                <a href="">リフォーム</a>
-            </li>
-            <li>
-                <a href="">リノベーション</a>
-            </li>
-            <li>
-                <a href="">新築＆不動産</a>
-            </li>
-            <li>
-                <a href="">カテゴリー</a>
-            </li>
-        </ul>
 
-        <div class="works__content">
+        <div class="works__content voice__content">
             <ul class="flex">
             <?php
 					$paged = get_query_var('paged') ? get_query_var('paged') : 1 ;
 					$args = array(
-						'posts_per_page' => '-1',
+						'posts_per_page' => '16',
 						'post_status' => 'publish',
 						'paged' => $paged,
-						'post_type' => 'rf-works',
+						'post_type' => 'voice',
 					);
 					?>
                     <?php $my_query = new WP_Query( $args ); ?><!-- クエリの指定 -->
@@ -58,7 +41,7 @@
                         <h2>
                             <?php the_title(); ?>
                         </h2>
-                        <ul class="tag"></ul>
+
                     </a>
                 </li>
 

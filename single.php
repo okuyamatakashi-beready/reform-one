@@ -30,7 +30,7 @@
             <div class="contact__container">
                 <h3>
                     <span>contact</span>
-                    <p>こちらのリフォームに関するお問い合わせはこちら</p>
+                    <p>こちらのリフォームに関する<br class="sp">お問い合わせはこちら</p>
                 </h3>
 
 

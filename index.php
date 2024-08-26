@@ -125,10 +125,10 @@
 				</a>
 
 				<div class="flex">
-					<a href="/contact" class="nav__btn--contact nav__btn--small">
+					<a href="/visit" class="nav__btn--contact nav__btn--small">
 						<span>来場予約</span>
 					</a>
-					<a href="/contact" class="nav__btn--contact nav__btn--small">
+					<a href="/book" class="nav__btn--contact nav__btn--small">
 						<span>資料請求</span>
 					</a>
 				</div>
@@ -141,8 +141,8 @@
 
 
 <div class="fixed__btn">
-	<a href="/" class="btn reserve">来場予約</a>
-	<a href="/" class="btn material">資料請求</a>
+	<a href="/visit" class="btn reserve">来場予約</a>
+	<a href="/book" class="btn material">資料請求</a>
 </div>
 
 
@@ -461,10 +461,10 @@
                                 </a>
 
                                 <div class="flex">
-                                    <a href="/contact" class="nav__btn--contact nav__btn--small">
+                                    <a href="/visit" class="nav__btn--contact nav__btn--small">
                                         <span>来場予約</span>
                                     </a>
-                                    <a href="/contact" class="nav__btn--contact nav__btn--small">
+                                    <a href="/book" class="nav__btn--contact nav__btn--small">
                                         <span>資料請求</span>
                                     </a>
                                 </div>

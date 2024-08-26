@@ -18,6 +18,10 @@ function my_styles()  {
       wp_enqueue_style( 'works_css', get_template_directory_uri() . '/scss/works/index.css');
       wp_enqueue_style( 'news_css', get_template_directory_uri() . '/scss/news/index.css');
       }
+    if ( is_page('voice') ) {
+      wp_enqueue_style( 'works_css', get_template_directory_uri() . '/scss/works/index.css');
+      wp_enqueue_style( 'news_css', get_template_directory_uri() . '/scss/news/index.css');
+      }
     if ( is_page('blog') ) {
       wp_enqueue_style( 'works_css', get_template_directory_uri() . '/scss/works/index.css');
       wp_enqueue_style( 'news_css', get_template_directory_uri() . '/scss/news/index.css');
@@ -37,12 +41,32 @@ function my_styles()  {
       wp_enqueue_style( 'works_css', get_template_directory_uri() . '/scss/works/index.css');
       wp_enqueue_style( 'contact_css', get_template_directory_uri() . '/scss/contact/index.css');
       }
+    if ( is_page('book') ) {
+      wp_enqueue_style( 'page_css', get_template_directory_uri() . '/scss/page/index.css');
+      wp_enqueue_style( 'works_css', get_template_directory_uri() . '/scss/works/index.css');
+      wp_enqueue_style( 'contact_css', get_template_directory_uri() . '/scss/contact/index.css');
+      }
+    if ( is_page('visit') ) {
+      wp_enqueue_style( 'page_css', get_template_directory_uri() . '/scss/page/index.css');
+      wp_enqueue_style( 'works_css', get_template_directory_uri() . '/scss/works/index.css');
+      wp_enqueue_style( 'contact_css', get_template_directory_uri() . '/scss/contact/index.css');
+      }
+    if ( is_page('book-confirm') ) {
+      wp_enqueue_style( 'page_css', get_template_directory_uri() . '/scss/page/index.css');
+      wp_enqueue_style( 'works_css', get_template_directory_uri() . '/scss/works/index.css');
+      wp_enqueue_style( 'contact_css', get_template_directory_uri() . '/scss/contact/index.css');
+      }
     if ( is_page('confirm') ) {
       wp_enqueue_style( 'page_css', get_template_directory_uri() . '/scss/page/index.css');
       wp_enqueue_style( 'works_css', get_template_directory_uri() . '/scss/works/index.css');
       wp_enqueue_style( 'contact_css', get_template_directory_uri() . '/scss/contact/index.css');
       }
     if ( is_page('works-confirm') ) {
+      wp_enqueue_style( 'page_css', get_template_directory_uri() . '/scss/page/index.css');
+      wp_enqueue_style( 'works_css', get_template_directory_uri() . '/scss/works/index.css');
+      wp_enqueue_style( 'contact_css', get_template_directory_uri() . '/scss/contact/index.css');
+      }
+    if ( is_page('visit-confirm') ) {
       wp_enqueue_style( 'page_css', get_template_directory_uri() . '/scss/page/index.css');
       wp_enqueue_style( 'works_css', get_template_directory_uri() . '/scss/works/index.css');
       wp_enqueue_style( 'contact_css', get_template_directory_uri() . '/scss/contact/index.css');
