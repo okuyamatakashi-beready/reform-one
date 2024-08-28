@@ -15,12 +15,13 @@
 
         <ul class="works__cat flex">
             <li>
-                <a href="">all</a>
+                <a href="<?php echo get_permalink(get_option('page_for_posts')); ?>" class="active">all</a>
             </li>
             <li>
-                <a href="">イベント</a>
+                <a href="/category/event" class="">イベント</a>
             </li>
         </ul>
+
 
         <div class="works__content">
             <ul class="flex">

@@ -749,15 +749,25 @@ ul.works__cat li a {
   color: #BB9B52;
   border-radius: 25px;
   border: 1px solid #BB9B52;
+  background-color: #fff;
   text-align: center;
   padding: 5px 32px;
   font-weight: bold;
+  transition: all 0.3s;
   font-size: clamp(14px, 1.182rem + 1.09vw, 2rem);
 }
 @media screen and (max-width: 768px) {
   ul.works__cat li a {
     font-size: 14px;
   }
+}
+ul.works__cat li a.active {
+  color: #fff;
+  background-color: #BB9B52;
+}
+ul.works__cat li a:hover {
+  color: #fff;
+  background-color: #BB9B52;
 }
 
 .works__content ul {
