@@ -825,6 +825,19 @@ gnav
   font-weight: 500;
   line-height: 1.4;
 }
+.single__container .event__spec .spec__container ul {
+  flex-wrap: wrap;
+}
+.single__container .event__spec .spec__container ul li {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.single__container .event__spec .spec__container ul li p {
+  font-weight: 400;
+}
+.single__container .event__spec .spec__container .common__btn {
+  min-width: 180px;
+}
 .single__container .works__voice {
   box-sizing: border-box;
   padding: 0 10rem;
@@ -959,4 +972,33 @@ gnav
 }
 .single__container .common__btn p {
   margin-left: 10px;
+}
+
+.event__container dl:nth-of-type(4) p br {
+  display: none;
+}
+.event__container dl select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  background-color: white;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("dropdown-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px 16px;
+}
+.event__container dl select:focus {
+  border-color: #005faf;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 95, 175, 0.5);
+}
+.event__container dl select::-ms-expand {
+  display: none;
 }/*# sourceMappingURL=index.css.map */

@@ -34,11 +34,11 @@
 						'category_name' => 'news',
 					);
 					?>
-                    <?php $my_query = new WP_Query( $args ); ?><!-- クエリの指定 -->
+                    <?php $wp_query = new WP_Query( $args ); ?><!-- クエリの指定 -->
 
-                <?php if ( $my_query->have_posts() ) :
+                <?php if ( $wp_query->have_posts() ) :
 
-                    while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
+                    while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
 
                 <li>
                     <a href="<?php the_permalink(); ?>">
@@ -67,6 +67,14 @@
                 <?php endif; ?>
                 <?php wp_reset_postdata(); ?>	
             </ul>
+
+            <div class="pagination_wrap">
+				<?php
+					if ( function_exists( 'pagination' ) ) :
+						pagination( $wp_query->max_num_pages, get_query_var( 'paged' ) );
+					endif;
+				?>
+			</div>
         </div>
     </div>
 </div>

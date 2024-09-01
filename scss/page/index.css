@@ -730,6 +730,7 @@ h1.page__ttl span {
 ul.works__cat {
   justify-content: flex-start;
   margin-bottom: 6.4rem;
+  flex-wrap: wrap;
 }
 @media screen and (max-width: 768px) {
   ul.works__cat {
@@ -738,6 +739,7 @@ ul.works__cat {
 }
 ul.works__cat li {
   margin-right: 2.4rem;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
   ul.works__cat li {
@@ -759,6 +761,7 @@ ul.works__cat li a {
 @media screen and (max-width: 768px) {
   ul.works__cat li a {
     font-size: 14px;
+    padding: 5px 5px;
   }
 }
 ul.works__cat li a.active {
@@ -1187,4 +1190,45 @@ h3.reform__ttl span {
 }
 .renovation__kinds .kinds__container .flex .one__estate div {
   margin-bottom: 4rem;
+}
+
+.pagination_wrap {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (max-width: 768px) {
+  .pagination_wrap {
+    width: 100%;
+  }
+}
+.pagination_wrap .pagination {
+  font-size: clamp(13px, 1.191rem + 0.55vw, 16px);
+  justify-content: center;
+}
+.pagination_wrap .pagination a {
+  font-size: clamp(13px, 1.191rem + 0.55vw, 16px);
+  color: #000;
+  margin: 0 2rem;
+}
+@media screen and (max-width: 768px) {
+  .pagination_wrap .pagination a {
+    margin: 0 15px;
+  }
+}
+.pagination_wrap .pagination a.first {
+  display: none;
+}
+.pagination_wrap .pagination a.last {
+  display: none;
+}
+.pagination_wrap .pagination a.current {
+  border-bottom: 2px solid #BB9B52;
+  margin-top: 2px;
+}
+.pagination_wrap .pagination span.dots:last-of-type {
+  display: none;
+}
+.pagination_wrap .pagination .page_num {
+  display: none;
 }/*# sourceMappingURL=index.css.map */

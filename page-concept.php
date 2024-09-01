@@ -76,21 +76,21 @@
             </h3>
 
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/concept/morelroom01_pc.png" alt="" class="sp">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/concept/morelroom01_sp.png" alt="" class="pc">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/concept/morelroom01_pc.png" alt="" class="pc">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/concept/morelroom01_sp.png" alt="" class="sp">
             </figure>
         </div>
 
         <div class="sec02">
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/concept/morelroom02_pc.png" alt="" class="sp">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/concept/morelroom02_sp.png" alt="" class="pc">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/concept/morelroom02_pc.png" alt="" class="pc">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/concept/morelroom02_sp.png" alt="" class="sp">
             </figure>
         </div>
         <div class="sec03">
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/concept/morelroom03_pc.png" alt="" class="sp">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/concept/morelroom03_sp.png" alt="" class="pc">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/concept/morelroom03_pc.png" alt="" class="pc">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/concept/morelroom03_sp.png" alt="" class="sp">
             </figure>
         </div>
     </div>

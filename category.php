@@ -9,18 +9,50 @@
 <div class="works">
     <div class="page__container">
         <h1 class="page__ttl">
-            <p>news</p>
-            <span>お知らせ</span>
+            <p>blog</p>
+            <span>ブログ</span>
         </h1>
 
-        <ul class="works__cat flex">
-            <li>
-                <a href="/news">all</a>
-            </li>
-            <li>
-                <a href="/category/event" class="active">イベント</a>
-            </li>
-        </ul>
+
+            <?php
+            // 除外するカテゴリーのスラッグを指定
+            $exclude_categories = array('event', 'event2', 'uncategorized');
+
+            // スラッグからカテゴリーIDを取得
+            $exclude_ids = array();
+            foreach ($exclude_categories as $slug) {
+                $category = get_category_by_slug($slug);
+                if ($category) {
+                    $exclude_ids[] = $category->term_id;
+                }
+            }
+
+            // カテゴリーを取得（除外するカテゴリーIDを指定）
+            $categories = get_categories(array(
+                'exclude' => $exclude_ids,
+            ));
+
+            // 現在のカテゴリーのスラッグを取得
+            $current_category_slug = get_queried_object()->slug;
+
+            if ($categories) {
+                echo '<ul class="works__cat flex">'; // ulタグの開始
+                foreach ($categories as $category) {
+                    // 現在のカテゴリーと一致するか確認
+                    $class = ($current_category_slug === $category->slug) ? 'active' : '';
+                    
+                    // 各カテゴリーのリンク付きリストアイテムを出力
+                    echo '<li class="category-item">';
+                    echo '<a href="' . esc_url(get_category_link($category->term_id)) . '" title="' . esc_attr($category->name) . '" class="' . esc_attr($class) . '">';
+                    echo esc_html($category->name);
+                    echo '</a>';
+                    echo '</li>';
+                }
+                echo '</ul>'; // ulタグの閉じ
+            }
+            ?>
+
+
         <div class="works__content">
         <ul class="flex">
             <?php
@@ -36,10 +68,10 @@
                 'paged' => $paged,
                 'category_name' => $current_category->slug, // カテゴリーのスラッグを指定
             );
-            $my_query = new WP_Query($args); // クエリの指定
+            $wp_query = new WP_Query($args); // クエリの指定
 
-            if ($my_query->have_posts()) :
-                while ($my_query->have_posts()) : $my_query->the_post();
+            if ($wp_query->have_posts()) :
+                while ($wp_query->have_posts()) : $wp_query->the_post();
             ?>
                     <li>
                         <a href="<?php the_permalink(); ?>">
@@ -67,6 +99,13 @@
             wp_reset_postdata();
             ?>
         </ul>
+        <div class="pagination_wrap">
+            <?php
+                if ( function_exists( 'pagination' ) ) :
+                    pagination( $wp_query->max_num_pages, get_query_var( 'paged' ) );
+                endif;
+            ?>
+        </div>
 
 </div>
 

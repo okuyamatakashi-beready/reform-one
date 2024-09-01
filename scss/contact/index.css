@@ -1031,4 +1031,32 @@ gnav
   .confirm .confirm__container .thanks__content a.tel span {
     font-size: 32px;
   }
+}
+.confirm .event__container dl:nth-of-type(4) p br {
+  display: none;
+}
+.confirm .event__container dl select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  background-color: white;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("dropdown-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px 16px;
+}
+.confirm .event__container dl select:focus {
+  border-color: #005faf;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 95, 175, 0.5);
+}
+.confirm .event__container dl select::-ms-expand {
+  display: none;
 }/*# sourceMappingURL=index.css.map */

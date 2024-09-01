@@ -13,7 +13,7 @@
             <span>施工事例</span>
         </h1>
 
-        <?php
+            <?php
                 $terms = get_terms(array(
                     'taxonomy' => 'works_cat',
                     'hide_empty' => false, // 投稿がないタームも表示する場合はfalseにする
@@ -41,11 +41,19 @@
             <ul class="flex">
             <?php
 					$paged = get_query_var('paged') ? get_query_var('paged') : 1 ;
+                    $current_term = get_queried_object();
 					$args = array(
 						'posts_per_page' => '-1',
 						'post_status' => 'publish',
 						'paged' => $paged,
 						'post_type' => 'rf-works',
+                        'tax_query' => array(
+                            array(
+                                'taxonomy' => 'works_cat', // カスタムタクソノミー review_cat
+                                'field' => 'slug', // または 'term_id' など
+                                'terms' => $current_term->slug, 
+                            ),
+                        ),
 					);
 					?>
                     <?php $my_query = new WP_Query( $args ); ?><!-- クエリの指定 -->

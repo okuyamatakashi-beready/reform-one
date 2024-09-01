@@ -66,11 +66,14 @@ h1.page__ttl {
 ul.works__cat {
     justify-content: flex-start;
     margin-bottom: 6.4rem;
+    flex-wrap: wrap;
+
     @media screen and (max-width: 768px) {
         margin-bottom: 64px;
     }
     li {
         margin-right: 2.4rem;
+        margin-bottom: 30px;
         @media screen and (max-width: 768px) {
             margin-right: 10px;
             margin-bottom: 15px;
@@ -87,6 +90,7 @@ ul.works__cat {
             font-size: clamp(14px, 1.182rem + 1.09vw, 2rem);
             @media screen and (max-width: 768px) {
                 font-size: 14px;
+                padding: 5px 5px;
             }
             &.active {
                 color: #fff;
@@ -99,7 +103,6 @@ ul.works__cat {
         }
     }
 }
-
 .works__content {
     ul {
         justify-content: flex-start;
@@ -476,6 +479,45 @@ h3.reform__ttl {
                     margin-bottom: 4rem;
                 }
             }
+        }
+    }
+}
+
+.pagination_wrap {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+    .pagination {
+        font-size: clamp(13px, 1.191rem + 0.55vw, 16px);
+        justify-content: center;
+        a {
+            font-size: clamp(13px, 1.191rem + 0.55vw, 16px);
+            color: #000;
+            margin: 0 2rem;
+            @media screen and (max-width: 768px) {
+                margin: 0 15px;
+            }
+            &.first {
+                display: none;
+            }
+            &.last {
+                display: none;
+            }
+            &.current {
+                border-bottom: 2px solid #BB9B52;
+                margin-top: 2px;
+            }
+        }
+        span.dots {
+            &:last-of-type {
+                display: none;
+            }
+        }
+        .page_num {
+            display: none;
         }
     }
 }

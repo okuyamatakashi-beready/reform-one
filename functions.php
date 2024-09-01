@@ -14,6 +14,10 @@ function my_styles()  {
     if ( is_page('works') ) {
       wp_enqueue_style( 'works_css', get_template_directory_uri() . '/scss/works/index.css');
       }
+    if ( is_tax() ) {
+      wp_enqueue_style( 'works_css', get_template_directory_uri() . '/scss/works/index.css');
+      wp_enqueue_style( 'page_css', get_template_directory_uri() . '/scss/page/index.css');
+      }
     if ( is_page('news') ) {
       wp_enqueue_style( 'works_css', get_template_directory_uri() . '/scss/works/index.css');
       wp_enqueue_style( 'news_css', get_template_directory_uri() . '/scss/news/index.css');
@@ -65,6 +69,11 @@ function my_styles()  {
       wp_enqueue_style( 'works_css', get_template_directory_uri() . '/scss/works/index.css');
       wp_enqueue_style( 'contact_css', get_template_directory_uri() . '/scss/contact/index.css');
       }
+    if ( is_page('event-confirm') ) {
+      wp_enqueue_style( 'page_css', get_template_directory_uri() . '/scss/page/index.css');
+      wp_enqueue_style( 'works_css', get_template_directory_uri() . '/scss/works/index.css');
+      wp_enqueue_style( 'contact_css', get_template_directory_uri() . '/scss/contact/index.css');
+      }
     if ( is_page('confirm') ) {
       wp_enqueue_style( 'page_css', get_template_directory_uri() . '/scss/page/index.css');
       wp_enqueue_style( 'works_css', get_template_directory_uri() . '/scss/works/index.css');
@@ -107,6 +116,7 @@ function my_styles()  {
       }
     if ( is_single('') ) {
       wp_enqueue_style( 'single_css', get_template_directory_uri() . '/scss/single/index.css');
+      
       }
 
 
@@ -153,8 +163,8 @@ function pagination( $pages, $paged, $range = 1, $show_only = false ) {
   $pages = ( int ) $pages;
 
   //表示テキスト
-  $text_before  = "←";
-  $text_next    = "→";
+  $text_before  = "back";
+  $text_next    = "next";
 
   if ( $show_only && $pages === 1 ) {
       echo '<div class="pagination flex flex_start"><span class="current pager">1</span></div>';
@@ -213,4 +223,41 @@ function custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
+
+
+
+function add_custom_date_options_to_cf7($form) {
+  // 現在の投稿 ID を取得
+  $post_id = get_the_ID();
+
+  // 3つのカスタムフィールドから日時のデータを取得
+  $date1 = get_post_meta($post_id, 'time', true);
+  $date2 = get_post_meta($post_id, 'time_day2', true);
+  $date3 = get_post_meta($post_id, 'time_day3', true);
+
+  // オプションを生成
+  $options = '';
+  if ($date1) {
+      $options .= '<option value="' . esc_attr($date1) . '">' . esc_html($date1) . '</option>';
+  }
+  if ($date2) {
+      $options .= '<option value="' . esc_attr($date2) . '">' . esc_html($date2) . '</option>';
+  }
+  if ($date3) {
+      $options .= '<option value="' . esc_attr($date3) . '">' . esc_html($date3) . '</option>';
+  }
+
+  // セレクトボックスを生成してフォームに挿入
+  $select_box = '<select name="dayday" id="dayday">';
+  $select_box .= '<option value="">選択してください</option>'; // 初期値のオプション
+  $select_box .= $options;
+  $select_box .= '</select>';
+
+  // フォームの特定のプレースホルダーをセレクトボックスに置き換える
+  $form = str_replace('[dynamic-date-options]', $select_box, $form);
+
+  return $form;
+}
+
+add_filter('wpcf7_form_elements', 'add_custom_date_options_to_cf7');
 

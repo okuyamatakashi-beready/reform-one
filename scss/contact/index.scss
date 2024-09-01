@@ -392,5 +392,48 @@
             }
         }
     }
+    .event__container {
+       dl{
+        &:nth-of-type(4) {
+            p {
+                br {
+                    display: none;
+                }
+            }
+        }
+        select {
+            width: 100%; // コンテナにフィットするように調整
+            padding: 8px 12px;
+            border: 1px solid #ccc; // 枠線の色と太さ
+            border-radius: 4px; // 枠の角を丸く
+            font-size: 16px; // 文字サイズ
+            color: #333; // 文字色
+            background-color: white; // 背景色
+            cursor: pointer; // カーソルをポインターに
+        
+            // ブラウザのデフォルトスタイルを無効化
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        
+            // カスタムドロップダウンアイコン
+            background-image: url('dropdown-arrow.svg'); // 矢印のアイコン
+            background-repeat: no-repeat;
+            background-position: right 10px center; // 右側に10pxの余白を持たせて中央揃え
+            background-size: 16px 16px; // アイコンサイズ
+        
+            &:focus {
+                border-color: #005faf; // フォーカス時の枠線の色
+                outline: none; // アウトラインを消去
+                box-shadow: 0 0 5px rgba(0, 95, 175, 0.5); // フォーカス時にソフトなシャドウ
+            }
+        
+            // IEとEdgeのためのスタイル調整
+            &::-ms-expand {
+                display: none; // IEでのデフォルトの矢印を非表示に
+            }
+            }
+       } 
+    }
 
 }
