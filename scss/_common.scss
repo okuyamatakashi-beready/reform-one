@@ -318,13 +318,15 @@ gnav
     width: 100vw;
     height: 100vh;
     position: fixed;
-    z-index: -5000;
+    z-index: 5000;
     top: 0;
     left: 0;
     right: 0;
     bottom:0;
+    overflow: scroll;
     @media screen and (max-width: 768px) {
         overflow-y: scroll;
+        z-index: 5000;
     }
     &::before {
         content: "";
@@ -349,11 +351,14 @@ gnav
         right: -100%;
         transition: all 0.8s;
         position: relative;
+        overflow: scroll;
         @media screen and (max-width: 768px) {
             width: 100%;
             padding: 100px 40px;
+            z-index: 5000;
         }
         .nav__content {
+            overflow: scroll;
             ul {
                 flex-wrap: wrap;
                 border-bottom: 1px solid #fff;
@@ -371,9 +376,20 @@ gnav
                     }
                     &:nth-child(odd) {
                         width: 60%;
+                        @media screen and (max-width: 768px) {
+                            width: 50%;
+                        }
                     }
                     &:nth-child(even) {
                         width: 40%;
+                        @media screen and (max-width: 768px) {
+                            width: 50%;
+                        }
+                    }
+                    @media screen and (max-width: 768px) {
+                        &:last-child {
+                            width: 100%;
+                        }
                     }
                     a {
                         color: #fff;

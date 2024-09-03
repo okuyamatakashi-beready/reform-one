@@ -361,15 +361,17 @@ gnav
   width: 100vw;
   height: 100vh;
   position: fixed;
-  z-index: -5000;
+  z-index: 5000;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  overflow: scroll;
 }
 @media screen and (max-width: 768px) {
   #gnav {
     overflow-y: scroll;
+    z-index: 5000;
   }
 }
 #gnav::before {
@@ -395,12 +397,17 @@ gnav
   right: -100%;
   transition: all 0.8s;
   position: relative;
+  overflow: scroll;
 }
 @media screen and (max-width: 768px) {
   #gnav .gnav__container {
     width: 100%;
     padding: 100px 40px;
+    z-index: 5000;
   }
+}
+#gnav .gnav__container .nav__content {
+  overflow: scroll;
 }
 #gnav .gnav__container .nav__content ul {
   flex-wrap: wrap;
@@ -426,8 +433,23 @@ gnav
 #gnav .gnav__container .nav__content ul li:nth-child(odd) {
   width: 60%;
 }
+@media screen and (max-width: 768px) {
+  #gnav .gnav__container .nav__content ul li:nth-child(odd) {
+    width: 50%;
+  }
+}
 #gnav .gnav__container .nav__content ul li:nth-child(even) {
   width: 40%;
+}
+@media screen and (max-width: 768px) {
+  #gnav .gnav__container .nav__content ul li:nth-child(even) {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #gnav .gnav__container .nav__content ul li:last-child {
+    width: 100%;
+  }
 }
 #gnav .gnav__container .nav__content ul li a {
   color: #fff;

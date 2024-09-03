@@ -34,10 +34,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff05.png" alt="">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff05-02.png" alt="">
             </li>
-            <li>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff06.png" alt="">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff06-02.png" alt="">
-            </li>
+
             <li>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff07.png" alt="">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff07-02.png" alt="">
@@ -94,10 +91,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff20.png" alt="">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff20-02.png" alt="">
             </li>
-            <li>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff21.png" alt="">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff21-02.png" alt="">
-            </li>
+
             <li>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff22.png" alt="">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/staff/staff22-02.png" alt="">

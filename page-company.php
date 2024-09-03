@@ -99,7 +99,7 @@
                                     〒386-0017　長野県上田市踏入2-16-56<br>
                                     TEL : 0268-24-0440 / FAX : 0268-24-2756
                                 </p>
-                                <a href="/concept" class="common__btn" target="_blank">
+                                <a href="https://maps.app.goo.gl/QnaNS22h26wJsQp2A" class="common__btn" target="_blank">
                                     <div class="flex">
                                         <p>google map</p>
                                         <div class="common__btn--line">
@@ -115,7 +115,7 @@
                                     〒386-0002　長野県上田市住吉40-13<br>
                                     TEL:0268-71-0470
                                 </p>
-                                <a href="/concept" class="common__btn" target="_blank">
+                                <a href="https://maps.app.goo.gl/EP4PJxa8rpUmFhN78" class="common__btn" target="_blank">
                                     <div class="flex">
                                         <p>google map</p>
                                         <div class="common__btn--line">
@@ -131,7 +131,7 @@
                                     〒386-0002　長野県上田市住吉40-13<br>
                                     TEL:0268-71-0470
                                 </p>
-                                <a href="/concept" class="common__btn" target="_blank">
+                                <a href="https://maps.app.goo.gl/EP4PJxa8rpUmFhN78" class="common__btn" target="_blank">
                                     <div class="flex">
                                         <p>google map</p>
                                         <div class="common__btn--line">

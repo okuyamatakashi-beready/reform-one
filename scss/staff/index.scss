@@ -13,6 +13,7 @@ ul.staff__list {
     margin-left: auto;
     flex-wrap: wrap;
     margin-bottom: 16rem;
+    justify-content: flex-start;
     li {
         width: 14.333%;
         position: relative;
@@ -20,9 +21,14 @@ ul.staff__list {
         margin-bottom: 4rem;
         transform-style: preserve-3d;
         transition: transform .7s;
+        margin-right: 2.8004%;
+        &:nth-of-type(6n) {
+            margin-right: 0;
+        }
         @media screen and (max-width: 768px) {
             width: 50%;
             height: 175px;
+            margin-right: 0;
         }
         &:hover {
             transform: rotateX( 180deg );
