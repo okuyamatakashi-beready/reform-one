@@ -45,7 +45,7 @@
                         <a href="/estate">新築・不動産</a>
                     </li>
                     <li>
-                        <a href="/voice">お客様の声</a>
+                        <a href="/pre">お客様の声</a>
                     </li>
                     <li>
                         <a href="/company">会社概要</a>

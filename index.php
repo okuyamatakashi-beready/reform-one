@@ -452,7 +452,7 @@
                                 contact<span>お問い合わせ</span>
                             </h2>
                             <p>
-                            oneでリノベーションや家づくりをお考えの方は、<br class="sp">
+                            oneでリノベーションや家づくりをお考えの方は、<br class="pc">
                             お気軽にご相談ください。
                             </p>
                             <div class="nav__wrap--btn">

@@ -94,6 +94,14 @@ function my_styles()  {
       wp_enqueue_style( 'works_css', get_template_directory_uri() . '/scss/works/index.css');
       wp_enqueue_style( 'contact_css', get_template_directory_uri() . '/scss/contact/index.css');
       }
+    if ( is_404() ) {
+      wp_enqueue_style( 'page_css', get_template_directory_uri() . '/scss/page/index.css');
+      wp_enqueue_style( '404_css', get_template_directory_uri() . '/scss/404/index.css');
+      }
+    if ( is_page('pre') ) {
+      wp_enqueue_style( 'page_css', get_template_directory_uri() . '/scss/page/index.css');
+      wp_enqueue_style( '404_css', get_template_directory_uri() . '/scss/404/index.css');
+      }
     if ( is_page('renovation') ) {
       wp_enqueue_style( 'page_css', get_template_directory_uri() . '/scss/page/index.css');
       wp_enqueue_style( 'works_css', get_template_directory_uri() . '/scss/works/index.css');

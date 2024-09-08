@@ -94,7 +94,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="/voice">
+					<a href="/pre">
 						<p>お客様の声</p>
 						<span>voice</span>
 					</a>

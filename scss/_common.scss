@@ -318,15 +318,15 @@ gnav
     width: 100vw;
     height: 100vh;
     position: fixed;
-    z-index: 5000;
     top: 0;
     left: 0;
+    z-index: -5000;
     right: 0;
     bottom:0;
     overflow: scroll;
     @media screen and (max-width: 768px) {
         overflow-y: scroll;
-        z-index: 5000;
+        z-index: -50;
     }
     &::before {
         content: "";
