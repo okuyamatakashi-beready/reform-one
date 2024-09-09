@@ -61,7 +61,7 @@ $(document).ready(function(){
         autoplay: true, // 自動再生
         autoplaySpeed: 2000, // 自動再生のスピード（ミリ秒）
         arrows: true, // 左右のナビゲーション矢印を表示
-        dots: true, // ドットナビゲーションを表示
+        dots: false, // ドットナビゲーションを表示
         responsive: [
             {
                 breakpoint: 1024,
